@@ -209,53 +209,62 @@
   }
 
   .lesson-header {
-    padding: 0.75rem 0.75rem;
-    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    gap: 0.35rem;
     flex-wrap: nowrap;
+    flex-shrink: 0;
   }
 
   .close-btn {
-    padding: 0.4rem;
-    font-size: 1.2rem;
+    padding: 0.35rem;
+    font-size: 1.1rem;
+    min-width: 36px;
+    min-height: 36px;
   }
 
   .progress-track {
     flex: 1;
-    height: 6px;
+    height: 5px;
   }
 
   .lesson-body {
-    padding: 0.75rem;
+    padding: 0.3rem;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 80px - 80px);
+    max-height: calc(100vh - 55px - 65px);
   }
 
   .slide-content {
     max-width: 100%;
-    padding: 0.25rem;
+    padding: 0rem;
+    width: 100%;
   }
 
   /* Flashcard - Mobile */
   .flashcard {
-    max-width: 100%;
-    height: 240px;
+    max-width: 85%;
+    width: 85%;
+    height: 180px;
     margin: 0 auto;
   }
 
   .card-face {
-    padding: 1.5rem;
-    font-size: 0.95rem;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 
   .card-face h2 {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
   }
 
   .card-face p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .card-face span {
+    font-size: 1.5rem !important;
   }
 
   /* Quiz - Mobile */
@@ -284,20 +293,29 @@
   }
 
   .lesson-footer {
-    padding: 0.75rem 0.75rem;
+    padding: 0.4rem 0.3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    min-height: 58px;
   }
 
   .continue-btn {
-    padding: 0.8rem 1.25rem;
-    font-size: 0.95rem;
-    width: 100%;
-    max-width: 100%;
+    padding: 0.65rem 0.8rem;
+    font-size: 0.9rem;
+    width: 95%;
+    max-width: 95%;
     border-radius: var(--radius-sm);
-    min-height: 44px;
+    min-height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.35rem;
+    font-weight: 600;
   }
 
   .continue-btn:active {
