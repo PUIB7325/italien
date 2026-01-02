@@ -1,0 +1,378 @@
+import { Coffee, Sun, Moon, MapPin, Utensils, Train, BookOpen, PenTool, MessageCircle, Heart, Star, AlertCircle, PartyPopper, Flower, Dumbbell, Laptop, Users, Gamepad2, Briefcase, GraduationCap, Palette, Binary, Calendar, CalendarDays, SunSnow, Compass, Shirt, Home, Building, Cat, Mountain, Car, Apple, Smile, ShoppingCart, Clock, Bed, Pill, Smartphone, Plane, Wind, Eye, Music, Camera, Newspaper, Trophy, Brain } from 'lucide-react';
+
+export const contentData = {
+  micro: {
+    title: 'Micro-leçons Quotidiennes',
+    subtitle: 'Une dose d\'italien servie chaque jour',
+    intro: 'Objectif: Vocabulaire quotidien',
+    items: [
+      {
+        id: 'colors',
+        title: 'I Colori',
+        desc: 'Rouge, Bleu, Vert...',
+        duration: '3 min',
+        xp: 10,
+        locked: false,
+        icon: Palette,
+        slides: [
+          { type: 'intro', title: 'I Colori', content: 'Vocabulaire: Rouge, Bleu, Vert...' },
+          { type: 'flashcard', front: 'Rosso', back: 'Rouge', pronunciation: '/ros-so/' },
+          { type: 'flashcard', front: 'Blu', back: 'Bleu', pronunciation: '/blu/' },
+          { type: 'flashcard', front: 'Verde', back: 'Vert', pronunciation: '/vér-dé/' },
+          { type: 'flashcard', front: 'Giallo', back: 'Jaune', pronunciation: '/jal-lo/' },
+          { type: 'flashcard', front: 'Nero', back: 'Noir', pronunciation: '/né-ro/' },
+          { type: 'flashcard', front: 'Bianco', back: 'Blanc', pronunciation: '/bian-ko/' },
+          { type: 'quiz', question: 'Que signifie "Rosso" ?', options: [{ text: 'Bleu', correct: false }, { text: 'Rouge', correct: true }] },
+          { type: 'success', title: 'Fini !', content: 'Bravo !' }
+        ]
+      },
+      {
+        id: 'numbers',
+        title: 'I Numeri 1-10',
+        desc: 'Compter jusqu\'à 10',
+        duration: '3 min',
+        xp: 10,
+        locked: false,
+        icon: Binary,
+        slides: [
+          { type: 'intro', title: 'I Numeri 1-10', content: 'Vocabulaire: Compter jusqu\'à 10' },
+          { type: 'flashcard', front: 'Uno', back: 'Un', pronunciation: '/u-no/' },
+          { type: 'flashcard', front: 'Due', back: 'Deux', pronunciation: '/du-é/' },
+          { type: 'flashcard', front: 'Tre', back: 'Trois', pronunciation: '/tré/' },
+          { type: 'flashcard', front: 'Quattro', back: 'Quatre', pronunciation: '/kuat-tro/' },
+          { type: 'flashcard', front: 'Cinque', back: 'Cinq', pronunciation: '/chin-kwé/' },
+          { type: 'flashcard', front: 'Dieci', back: 'Dix', pronunciation: '/di-é-chi/' },
+          { type: 'quiz', question: 'Que signifie "Uno" ?', options: [{ text: 'Deux', correct: false }, { text: 'Un', correct: true }] },
+          { type: 'success', title: 'Fini !', content: 'Bravo !' }
+        ]
+      },
+      {
+        id: 'restaurant',
+        title: 'Al Ristorante',
+        desc: 'Commander à manger et boire',
+        duration: '7 min',
+        xp: 20,
+        locked: false,
+        icon: Utensils,
+        slides: [
+          { type: 'intro', title: 'Al Ristorante', content: 'Apprenez le vocabulaire pour commander un repas en Italie.' },
+          { type: 'flashcard', front: 'Ristorante (il)', back: 'Le restaurant', pronunciation: '/ris-to-ran-té/' },
+          { type: 'flashcard', front: 'Cameriere (il)', back: 'Le serveur', pronunciation: '/ka-mé-rié-ré/' },
+          { type: 'flashcard', front: 'Menu (il)', back: 'Le menu', pronunciation: '/mé-nù/' },
+          { type: 'flashcard', front: 'Antipasto (l\')', back: 'L\'entrée/l\'apéritif', pronunciation: '/an-ti-pas-to/' },
+          { type: 'flashcard', front: 'Primo (il)', back: 'Le premier plat (pâtes/riz)', pronunciation: '/pri-mo/' },
+          { type: 'flashcard', front: 'Secondo (il)', back: 'Le deuxième plat (viande/poisson)', pronunciation: '/sé-kon-do/' },
+          { type: 'flashcard', front: 'Dolce (il)', back: 'Le dessert', pronunciation: '/dol-ché/' },
+          { type: 'flashcard', front: 'Vino (il)', back: 'Le vin', pronunciation: '/vi-no/' },
+          { type: 'flashcard', front: 'Birra (la)', back: 'La bière', pronunciation: '/bir-ra/' },
+          { type: 'quiz', question: 'Comment dit-on "Le restaurant" en italien ?', options: [{ text: 'Menu', correct: false }, { text: 'Ristorante', correct: true }, { text: 'Cameriere', correct: false }] },
+          { type: 'success', title: 'Al Ristorante Completato!', content: 'Vous pouvez maintenant commander au restaurant.' }
+        ]
+      },
+      {
+        id: 'shopping',
+        title: 'Lo Shopping',
+        desc: 'Faire les courses et achats',
+        duration: '6 min',
+        xp: 18,
+        locked: false,
+        icon: ShoppingCart,
+        slides: [
+          { type: 'intro', title: 'Lo Shopping', content: 'Vocabulaire pour faire les courses et acheter des vêtements.' },
+          { type: 'flashcard', front: 'Negozio (il)', back: 'Le magasin', pronunciation: '/né-go-zio/' },
+          { type: 'flashcard', front: 'Mercato (il)', back: 'Le marché', pronunciation: '/mér-ka-to/' },
+          { type: 'flashcard', front: 'Centro commerciale (il)', back: 'Le centre commercial', pronunciation: '/chén-tro kom-mér-chia-lé/' },
+          { type: 'flashcard', front: 'Commesso (il)', back: 'Le vendeur', pronunciation: '/kom-més-so/' },
+          { type: 'flashcard', front: 'Prezzo (il)', back: 'Le prix', pronunciation: '/prét-zo/' },
+          { type: 'flashcard', front: 'Quanto costa?', back: 'Combien ça coûte?', pronunciation: '/kwan-to kos-ta/' },
+          { type: 'flashcard', front: 'Sconto (lo)', back: 'La réduction', pronunciation: '/skon-to/' },
+          { type: 'flashcard', front: 'Pagare', back: 'Payer', pronunciation: '/pa-ga-ré/' },
+          { type: 'quiz', question: 'Comment demander le prix en italien ?', options: [{ text: 'Buon appetito', correct: false }, { text: 'Quanto costa?', correct: true }, { text: 'Cameriere!', correct: false }] },
+          { type: 'success', title: 'Lo Shopping Completato!', content: 'Vous êtes prêt à faire du shopping en Italie!' }
+        ]
+      },
+      {
+        id: 'adjectives100',
+        title: '100 Adjectifs Italiens',
+        desc: 'Complétez votre vocabulaire d\'adjectifs',
+        duration: '10 min',
+        xp: 30,
+        locked: false,
+        icon: Eye,
+        slides: [
+          { type: 'intro', title: 'Les 100 Adjectifs Italiens', content: 'Maîtrisez 100 adjectifs essentiels pour enrichir votre vocabulaire.' },
+          { type: 'flashcard', front: 'Bello', back: 'Beau', pronunciation: '/bél-lo/' },
+          { type: 'flashcard', front: 'Brutto', back: 'Laid', pronunciation: '/brut-to/' },
+          { type: 'flashcard', front: 'Grande', back: 'Grand', pronunciation: '/gran-dé/' },
+          { type: 'flashcard', front: 'Piccolo', back: 'Petit', pronunciation: '/pik-ko-lo/' },
+          { type: 'flashcard', front: 'Buono', back: 'Bon', pronunciation: '/bwò-no/' },
+          { type: 'flashcard', front: 'Cattivo', back: 'Mauvais', pronunciation: '/kat-ti-vo/' },
+          { type: 'flashcard', front: 'Nuovo', back: 'Nouveau', pronunciation: '/nwò-vo/' },
+          { type: 'flashcard', front: 'Vecchio', back: 'Vieux', pronunciation: '/vék-kio/' },
+          { type: 'flashcard', front: 'Alto', back: 'Haut', pronunciation: '/al-to/' },
+          { type: 'flashcard', front: 'Basso', back: 'Bas', pronunciation: '/bas-so/' },
+          { type: 'quiz', question: 'Que signifie "Bello"?', options: [{ text: 'Laid', correct: false }, { text: 'Beau', correct: true }, { text: 'Petit', correct: false }] },
+          { type: 'success', title: 'Les 100 Adjectifs Maîtrisés!', content: 'Vous avez enrichi votre vocabulaire d\'adjectifs!' }
+        ]
+      },
+      {
+        id: 'routine_quotidienne',
+        title: 'La Routine Quotidienne',
+        desc: 'Vocabulaire avancé de la vie quotidienne',
+        duration: '9 min',
+        xp: 28,
+        locked: false,
+        icon: Bed,
+        slides: [
+          { type: 'intro', title: 'La Routine Quotidienne', content: 'Maîtrisez le vocabulaire de la vie quotidienne en italien.' },
+          { type: 'flashcard', front: 'Sveglia (la)', back: 'L\'alarme, le réveil', pronunciation: '/své-lia/' },
+          { type: 'flashcard', front: 'Svegliarsi', back: 'Se réveiller', pronunciation: '/sve-lia-rsi/' },
+          { type: 'flashcard', front: 'Colazione (la)', back: 'Le petit-déjeuner', pronunciation: '/ko-la-zio-né/' },
+          { type: 'flashcard', front: 'Doccia (la)', back: 'La douche', pronunciation: '/doch-cha/' },
+          { type: 'flashcard', front: 'Lavarsi', back: 'Se laver', pronunciation: '/la-var-si/' },
+          { type: 'flashcard', front: 'Vestirsi', back: 'S\'habiller', pronunciation: '/ves-tir-si/' },
+          { type: 'flashcard', front: 'Truccarsi', back: 'Se maquiller', pronunciation: '/truk-kar-si/' },
+          { type: 'flashcard', front: 'Pettinarsi', back: 'Se peigner', pronunciation: '/pet-ti-nar-si/' },
+          { type: 'flashcard', front: 'Andare a scuola', back: 'Aller à l\'école', pronunciation: '/an-da-ré a sku-o-la/' },
+          { type: 'flashcard', front: 'Pranzo (il)', back: 'Le déjeuner', pronunciation: '/pran-zo/' },
+          { type: 'quiz', question: 'Comment dit-on "Se réveiller"?', options: [{ text: 'Svegliarsi', correct: true }, { text: 'Vestirsi', correct: false }, { text: 'Lavarsi', correct: false }] },
+          { type: 'flashcard', front: 'Cena (la)', back: 'Le dîner', pronunciation: '/ché-na/' },
+          { type: 'flashcard', front: 'Fare le pulizie', back: 'Faire le ménage', pronunciation: '/fa-ré lé pu-li-zié/' },
+          { type: 'flashcard', front: 'Stirare', back: 'Repasser', pronunciation: '/sti-ra-ré/' },
+          { type: 'flashcard', front: 'Andare a letto', back: 'Aller au lit', pronunciation: '/an-da-ré a lét-to/' },
+          { type: 'flashcard', front: 'Dormire', back: 'Dormir', pronunciation: '/dor-mi-ré/' },
+          { type: 'success', title: 'La Routine Quotidienne Maîtrisée!', content: 'Vous pouvez maintenant parler de votre routine quotidienne en italien!' }
+        ]
+      },
+      {
+        id: 'adj_connaître',
+        title: '100 Adjectifs à Connaître',
+        desc: 'Adjectifs essentiels de A à Z',
+        duration: '12 min',
+        xp: 35,
+        locked: false,
+        icon: Palette,
+        slides: [
+          { type: 'intro', title: '100 Adjectifs à Connaître', content: 'Découvrez les adjectifs les plus importants de la langue italienne.' },
+          { type: 'flashcard', front: 'Abbandonato', back: 'Abandonné', pronunciation: '/ab-ban-do-na-to/' },
+          { type: 'flashcard', front: 'Abominevole', back: 'Abominable', pronunciation: '/a-bo-mi-né-vo-lé/' },
+          { type: 'flashcard', front: 'Acerbo', back: 'Vert, acide', pronunciation: '/a-chér-bo/' },
+          { type: 'flashcard', front: 'Acido', back: 'Acide', pronunciation: '/a-chi-do/' },
+          { type: 'flashcard', front: 'Acuto', back: 'Aigu, pointu', pronunciation: '/a-ku-to/' },
+          { type: 'flashcard', front: 'Adatto', back: 'Approprié', pronunciation: '/a-dat-to/' },
+          { type: 'flashcard', front: 'Affabile', back: 'Affable', pronunciation: '/af-fa-bi-lé/' },
+          { type: 'flashcard', front: 'Affamato', back: 'Affamé', pronunciation: '/af-fa-ma-to/' },
+          { type: 'flashcard', front: 'Affannoso', back: 'Angoissant', pronunciation: '/af-fan-no-so/' },
+          { type: 'flashcard', front: 'Aggraziato', back: 'Gracieux', pronunciation: '/ag-gra-zia-to/' },
+          { type: 'flashcard', front: 'Aggressivo', back: 'Agressif', pronunciation: '/ag-gres-si-vo/' },
+          { type: 'quiz', question: 'Que signifie "Affamato"?', options: [{ text: 'Affable', correct: false }, { text: 'Affamé', correct: true }, { text: 'Affannoso', correct: false }] },
+          { type: 'flashcard', front: 'Agile', back: 'Agile, souple', pronunciation: '/a-ji-lé/' },
+          { type: 'flashcard', front: 'Agitato', back: 'Agité', pronunciation: '/a-ji-ta-to/' },
+          { type: 'flashcard', front: 'Agosto', back: 'D\'août', pronunciation: '/a-gos-to/' },
+          { type: 'flashcard', front: 'Agrario', back: 'Agricole', pronunciation: '/a-gra-rio/' },
+          { type: 'flashcard', front: 'Agreste', back: 'Rustique, champêtre', pronunciation: '/a-gres-té/' },
+          { type: 'flashcard', front: 'Agricolo', back: 'Agricole', pronunciation: '/a-gri-ko-lo/' },
+          { type: 'flashcard', front: 'Agro', back: 'Aigre, acide', pronunciation: '/a-gro/' },
+          { type: 'success', title: 'Adjectifs A-Z Maîtrisés!', content: 'Vous connaissez les 100 adjectifs essentiels!' }
+        ]
+      },
+      {
+        id: 'adj_utiles',
+        title: '100 Adjectifs Utiles',
+        desc: 'Les adjectifs du quotidien',
+        duration: '11 min',
+        xp: 32,
+        locked: false,
+        icon: Brain,
+        slides: [
+          { type: 'intro', title: '100 Adjectifs Utiles en Italien', content: 'Apprenez les adjectifs les plus pratiques pour converser.' },
+          { type: 'flashcard', front: 'Adorabile', back: 'Adorable', pronunciation: '/a-do-ra-bi-lé/' },
+          { type: 'flashcard', front: 'Adorato', back: 'Adoré', pronunciation: '/a-do-ra-to/' },
+          { type: 'flashcard', front: 'Adorno', back: 'Orné, embelli', pronunciation: '/a-dor-no/' },
+          { type: 'flashcard', front: 'Adulatore', back: 'Adulateur', pronunciation: '/a-du-la-to-ré/' },
+          { type: 'flashcard', front: 'Adulatorio', back: 'Adulatoire', pronunciation: '/a-du-la-to-rio/' },
+          { type: 'flashcard', front: 'Adulto', back: 'Adulte', pronunciation: '/a-dul-to/' },
+          { type: 'flashcard', front: 'Aerato', back: 'Aéré', pronunciation: '/a-é-ra-to/' },
+          { type: 'flashcard', front: 'Aereo', back: 'Aérien', pronunciation: '/a-é-ré-o/' },
+          { type: 'flashcard', front: 'Affabile', back: 'Affable, courtois', pronunciation: '/af-fa-bi-lé/' },
+          { type: 'flashcard', front: 'Affettuoso', back: 'Affectueux', pronunciation: '/af-fet-tu-o-so/' },
+          { type: 'flashcard', front: 'Affidabile', back: 'Digne de confiance', pronunciation: '/af-fi-da-bi-lé/' },
+          { type: 'quiz', question: 'Que signifie "Adorabile"?', options: [{ text: 'Adoré', correct: false }, { text: 'Adorable', correct: true }, { text: 'Adulte', correct: false }] },
+          { type: 'flashcard', front: 'Affidato', back: 'Confié', pronunciation: '/af-fi-da-to/' },
+          { type: 'flashcard', front: 'Affilato', back: 'Aiguisé, tranchant', pronunciation: '/af-fi-la-to/' },
+          { type: 'flashcard', front: 'Affinato', back: 'Affiné, raffiné', pronunciation: '/af-fi-na-to/' },
+          { type: 'flashcard', front: 'Affine', back: 'Voisin, similaire', pronunciation: '/af-fi-né/' },
+          { type: 'flashcard', front: 'Affiorato', back: 'Remonté à la surface', pronunciation: '/af-fio-ra-to/' },
+          { type: 'flashcard', front: 'Affisso', back: 'Affiché, collé', pronunciation: '/af-fis-so/' },
+          { type: 'flashcard', front: 'Affittato', back: 'Loué', pronunciation: '/af-fit-ta-to/' },
+          { type: 'success', title: 'Adjectifs Utiles Maîtrisés!', content: 'Vous pouvez maintenant exprimer des nuances avec ces adjectifs!' }
+        ]
+      },
+      {
+        id: 'phrases_100',
+        title: '100 Phrases Courantes',
+        desc: 'Les phrases essentielles pour parler',
+        duration: '15 min',
+        xp: 40,
+        locked: false,
+        icon: MessageCircle,
+        slides: [
+          { type: 'intro', title: '100 Phrases Courantes en Italien', content: 'Maîtrisez les 100 phrases indispensables pour communiquer.' },
+          { type: 'flashcard', front: 'Buongiorno!', back: 'Bonjour!', pronunciation: '/bwon-jor-no/' },
+          { type: 'flashcard', front: 'Buonasera!', back: 'Bonsoir!', pronunciation: '/bwon-a-sé-ra/' },
+          { type: 'flashcard', front: 'Mi chiamo...', back: 'Je m\'appelle...', pronunciation: '/mi kia-mo/' },
+          { type: 'flashcard', front: 'Qual è il tuo nome?', back: 'Quel est ton nom?', pronunciation: '/kwal é il tu-o no-mé/' },
+          { type: 'flashcard', front: 'Piacere di conoscerti!', back: 'Enchanté de te connaître!', pronunciation: '/pia-ché-ré di ko-nos-cher-ti/' },
+          { type: 'flashcard', front: 'Come stai?', back: 'Comment ça va?', pronunciation: '/ko-mé sta-i/' },
+          { type: 'flashcard', front: 'Sto bene, grazie!', back: 'Ça va bien, merci!', pronunciation: '/sto bé-né gra-tsié/' },
+          { type: 'flashcard', front: 'Come va?', back: 'Comment allez-vous?', pronunciation: '/ko-mé va/' },
+          { type: 'flashcard', front: 'Tutto bene?', back: 'Tout va bien?', pronunciation: '/tut-to bé-né/' },
+          { type: 'flashcard', front: 'Non sto bene.', back: 'Je ne vais pas bien.', pronunciation: '/non sto bé-né/' },
+          { type: 'flashcard', front: 'Grazie mille!', back: 'Merci beaucoup!', pronunciation: '/gra-tsié mil-lé/' },
+          { type: 'quiz', question: 'Comment dire "Bonjour" formellement?', options: [{ text: 'Ciao', correct: false }, { text: 'Buongiorno', correct: true }, { text: 'Arrivederci', correct: false }] },
+          { type: 'flashcard', front: 'Prego!', back: 'De rien!', pronunciation: '/pré-go/' },
+          { type: 'flashcard', front: 'Per favore.', back: 'S\'il vous plaît.', pronunciation: '/pér fa-vo-ré/' },
+          { type: 'flashcard', front: 'Scusa.', back: 'Pardon (informel).', pronunciation: '/sku-za/' },
+          { type: 'flashcard', front: 'Scusi.', back: 'Pardon (formel).', pronunciation: '/sku-zi/' },
+          { type: 'flashcard', front: 'Mi dispiace.', back: 'Je suis désolé.', pronunciation: '/mi dis-pia-ché/' },
+          { type: 'flashcard', front: 'Arrivederci!', back: 'Au revoir!', pronunciation: '/ar-ri-vé-dér-chi/' },
+          { type: 'flashcard', front: 'A presto!', back: 'À bientôt!', pronunciation: '/a pres-to/' },
+          { type: 'success', title: '100 Phrases Maîtrisées!', content: 'Vous pouvez maintenant avoir des conversations simples en italien!' }
+        ]
+      },
+      {
+        id: 'verbes_irreguliers',
+        title: 'Verbes Irréguliers',
+        desc: 'Les verbes les plus importants à maîtriser',
+        duration: '14 min',
+        xp: 38,
+        locked: false,
+        icon: BookOpen,
+        slides: [
+          { type: 'intro', title: 'Verbes Irréguliers Italiens', content: 'Apprenez les verbes irréguliers essentiels pour construire des phrases.' },
+          { type: 'flashcard', front: 'Essere', back: 'Être (Passato: Stato)', pronunciation: '/és-sé-ré/' },
+          { type: 'flashcard', front: 'Avere', back: 'Avoir (Passato: Avuto)', pronunciation: '/a-vé-ré/' },
+          { type: 'flashcard', front: 'Andare', back: 'Aller (Passato: Andato)', pronunciation: '/an-da-ré/' },
+          { type: 'flashcard', front: 'Venire', back: 'Venir (Passato: Venuto)', pronunciation: '/vé-ni-ré/' },
+          { type: 'flashcard', front: 'Fare', back: 'Faire (Passato: Fatto)', pronunciation: '/fa-ré/' },
+          { type: 'flashcard', front: 'Dire', back: 'Dire (Passato: Detto)', pronunciation: '/di-ré/' },
+          { type: 'flashcard', front: 'Dare', back: 'Donner (Passato: Dato)', pronunciation: '/da-ré/' },
+          { type: 'flashcard', front: 'Stare', back: 'Rester (Passato: Stato)', pronunciation: '/sta-ré/' },
+          { type: 'flashcard', front: 'Potere', back: 'Pouvoir (Passato: Potuto)', pronunciation: '/po-té-ré/' },
+          { type: 'flashcard', front: 'Dovere', back: 'Devoir (Passato: Dovuto)', pronunciation: '/do-vé-ré/' },
+          { type: 'flashcard', front: 'Volere', back: 'Vouloir (Passato: Voluto)', pronunciation: '/vo-lé-ré/' },
+          { type: 'quiz', question: 'Quel est le passé de "Fare"?', options: [{ text: 'Fatto', correct: true }, { text: 'Fato', correct: false }, { text: 'Fait', correct: false }] },
+          { type: 'flashcard', front: 'Sapere', back: 'Savoir (Passato: Saputo)', pronunciation: '/sa-pé-ré/' },
+          { type: 'flashcard', front: 'Rimanere', back: 'Rester (Passato: Rimasto)', pronunciation: '/ri-ma-né-ré/' },
+          { type: 'flashcard', front: 'Bere', back: 'Boire (Passato: Bevuto)', pronunciation: '/bé-ré/' },
+          { type: 'flashcard', front: 'Leggere', back: 'Lire (Passato: Letto)', pronunciation: '/leg-gé-ré/' },
+          { type: 'flashcard', front: 'Scrivere', back: 'Écrire (Passato: Scritto)', pronunciation: '/skri-vé-ré/' },
+          { type: 'flashcard', front: 'Aprire', back: 'Ouvrir (Passato: Aperto)', pronunciation: '/a-pri-ré/' },
+          { type: 'flashcard', front: 'Partire', back: 'Partir (Passato: Partito)', pronunciation: '/par-ti-ré/' },
+          { type: 'success', title: 'Verbes Irréguliers Maîtrisés!', content: 'Vous pouvez maintenant conjuguer les verbes les plus importants!' }
+        ]
+      },
+      {
+        id: 'vocab_avancé',
+        title: 'Vocabulaire Avancé',
+        desc: 'Routine et vie quotidienne - Niveau intermédiaire',
+        duration: '13 min',
+        xp: 36,
+        locked: false,
+        icon: Laptop,
+        slides: [
+          { type: 'intro', title: 'Vocabulaire Avancé - Routine & Vie Quotidienne', content: 'Enrichissez votre vocabulaire avec des termes avancés du quotidien.' },
+          { type: 'flashcard', front: 'Sveglia (la)', back: 'Le réveil, l\'alarme', pronunciation: '/své-lia/' },
+          { type: 'flashcard', front: 'Svegliarsi', back: 'Se réveiller', pronunciation: '/sve-lia-rsi/' },
+          { type: 'flashcard', front: 'Accendere la luce', back: 'Allumer la lumière', pronunciation: '/ak-chén-dé-ré la lu-ché/' },
+          { type: 'flashcard', front: 'Spegnere la luce', back: 'Éteindre la lumière', pronunciation: '/spé-nyé-ré la lu-ché/' },
+          { type: 'flashcard', front: 'Fare il letto', back: 'Faire son lit', pronunciation: '/fa-ré il lét-to/' },
+          { type: 'flashcard', front: 'Doccia (la)', back: 'La douche', pronunciation: '/doch-cha/' },
+          { type: 'flashcard', front: 'Fare la doccia', back: 'Prendre une douche', pronunciation: '/fa-ré la doch-cha/' },
+          { type: 'flashcard', front: 'Bagno (il)', back: 'Le bain', pronunciation: '/ba-nio/' },
+          { type: 'flashcard', front: 'Fare il bagno', back: 'Prendre un bain', pronunciation: '/fa-ré il ba-nio/' },
+          { type: 'flashcard', front: 'Lavarsi i denti', back: 'Se laver les dents', pronunciation: '/la-var-si i dén-ti/' },
+          { type: 'flashcard', front: 'Spazzolino (lo)', back: 'La brosse à dents', pronunciation: '/spat-zo-li-no/' },
+          { type: 'quiz', question: 'Comment dit-on "Prendre une douche"?', options: [{ text: 'Fare il bagno', correct: false }, { text: 'Fare la doccia', correct: true }, { text: 'Fare il letto', correct: false }] },
+          { type: 'flashcard', front: 'Colazione (la)', back: 'Le petit-déjeuner', pronunciation: '/ko-la-zio-né/' },
+          { type: 'flashcard', front: 'Pranzo (il)', back: 'Le déjeuner', pronunciation: '/pran-zo/' },
+          { type: 'flashcard', front: 'Cena (la)', back: 'Le dîner', pronunciation: '/ché-na/' },
+          { type: 'flashcard', front: 'Merenda (la)', back: 'Le goûter', pronunciation: '/mé-ren-da/' },
+          { type: 'flashcard', front: 'Andare al lavoro', back: 'Aller au travail', pronunciation: '/an-da-ré al la-vo-ro/' },
+          { type: 'flashcard', front: 'Tornare a casa', back: 'Rentrer à la maison', pronunciation: '/tor-na-ré a ka-za/' },
+          { type: 'flashcard', front: 'Fare i compiti', back: 'Faire les devoirs', pronunciation: '/fa-ré i kom-pi-ti/' },
+          { type: 'success', title: 'Vocabulaire Avancé Maîtrisé!', content: 'Vous pouvez maintenant parler avec plus de détails de votre routine!' }
+        ]
+      }
+    ]
+  },
+
+  thematic: {
+    title: 'Modules Thématiques',
+    subtitle: 'Ciblez votre apprentissage selon vos besoins',
+    intro: 'Objectif: Phrases de base & situations',
+    items: [
+      {
+        id: 'food',
+        title: 'Cuisine & Restaurant',
+        desc: 'Déchiffrer le menu, commander, payer l\'addition',
+        count: '12 leçons',
+        progress: 25,
+        icon: Coffee,
+        locked: false
+      },
+      {
+        id: 'travel',
+        title: 'Voyage & Tourisme',
+        desc: 'Se déplacer, demander des directions',
+        count: '10 leçons',
+        progress: 15,
+        icon: Plane,
+        locked: false
+      }
+    ]
+  },
+
+  courses: {
+    title: 'Cursus Académique',
+    subtitle: 'De débutant A1 à intermédiaire B2',
+    intro: 'Objectif: Grammaire & Bases solides',
+    items: [
+      {
+        id: 'level1',
+        title: 'Niveau 1: Les Fondations',
+        desc: 'Prononciation, Alphabet et être/avoir',
+        chapters: 5,
+        progress: 0,
+        icon: BookOpen,
+        locked: false,
+        slides: [
+          { type: 'intro', title: 'Les Verbes Auxiliaires', content: 'Le verbe Essere (Être)' },
+          { type: 'grammar', title: 'Essere (Être)', content: 'Io sono (Je suis)\nTu sei (Tu es)\nLui/Lei è (Il/Elle est)\nNoi siamo (Nous sommes)\nVoi siete (Vous êtes)\nLoro sono (Ils sont)' },
+          { type: 'quiz', question: 'Traduisez: Je suis français', options: [{ text: 'Io sono francese', correct: true }, { text: 'Tu sei francese', correct: false }] },
+          { type: 'success', title: 'Niveau 1 Complété!', content: 'Vous maîtrisez les verbes auxiliaires!' }
+        ]
+      },
+      {
+        id: 'level3',
+        title: 'Niveau 3: Phrases Courantes',
+        desc: 'Conversations et situations du quotidien',
+        chapters: 10,
+        progress: 0,
+        icon: MessageCircle,
+        locked: false,
+        slides: [
+          { type: 'intro', title: 'Phrases Essentielles', content: 'Les phrases indispensables pour converser.' },
+          { type: 'flashcard', front: 'Mi chiamo...', back: 'Je m\'appelle...', pronunciation: '/mi kia-mo/' },
+          { type: 'flashcard', front: 'Come stai?', back: 'Comment ça va?', pronunciation: '/ko-mé sta-i/' },
+          { type: 'flashcard', front: 'Sto bene, grazie.', back: 'Ça va bien, merci.', pronunciation: '/sto bé-né gra-tsié/' },
+          { type: 'flashcard', front: 'Piacere!', back: 'Enchanté!', pronunciation: '/pia-ché-ré/' },
+          { type: 'flashcard', front: 'Grazie mille!', back: 'Merci beaucoup!', pronunciation: '/gra-tsié mil-lé/' },
+          { type: 'flashcard', front: 'Per favore.', back: 'S\'il vous plaît.', pronunciation: '/pér fa-vo-ré/' },
+          { type: 'quiz', question: 'Comment dire "Je m\'appelle"?', options: [{ text: 'Mi chiamo', correct: true }, { text: 'Tu sei', correct: false }, { text: 'Come stai', correct: false }] },
+          { type: 'success', title: 'Phrases Maîtrisées!', content: 'Vous pouvez converser en italien!' }
+        ]
+      }
+    ]
+  }
+};

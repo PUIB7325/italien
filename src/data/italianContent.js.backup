@@ -1,0 +1,952 @@
+import { Coffee, Sun, Moon, MapPin, Utensils, Train, BookOpen, PenTool, MessageCircle, Heart, Star, AlertCircle, PartyPopper, Flower, Dumbbell, Laptop, Users, Gamepad2, Briefcase, GraduationCap , Palette, Binary, Calendar, CalendarDays, SunSnow, Compass, Shirt, Home, Building, Cat, Mountain, Car, Apple, Smile, ShoppingCart, Clock, Bed, Pill, Smartphone, Plane, Wind, Eye, Music, Camera, Newspaper, Trophy, Brain} from 'lucide-react';
+
+export const contentData = {
+  micro: {
+    title: 'Micro-leçons Quotidiennes',
+    subtitle: 'Une dose d\'italien servie chaque jour',
+    intro: 'Objectif: Vocabulaire quotidien',
+    items: [
+{"id": "colors", "title": "I Colori", "desc": "Rouge, Bleu, Vert...", "duration": "3 min", "xp": 10, "locked": false, icon: Palette, "slides": [{"type": "intro", "title": "I Colori", "content": "Vocabulaire: Rouge, Bleu, Vert..."}, {"type": "flashcard", "front": "Rosso", "back": "Rouge", "pronunciation": ""}, {"type": "flashcard", "front": "Blu", "back": "Bleu", "pronunciation": ""}, {"type": "flashcard", "front": "Verde", "back": "Vert", "pronunciation": ""}, {"type": "flashcard", "front": "Giallo", "back": "Jaune", "pronunciation": ""}, {"type": "flashcard", "front": "Nero", "back": "Noir", "pronunciation": ""}, {"type": "flashcard", "front": "Bianco", "back": "Blanc", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Rosso' ?", "options": [{"text": "Bleu", "correct": false}, {"text": "Rouge", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "numbers", "title": "I Numeri 1-10", "desc": "Compter jusqu'à 10", "duration": "3 min", "xp": 10, "locked": false, icon: Binary, "slides": [{"type": "intro", "title": "I Numeri 1-10", "content": "Vocabulaire: Compter jusqu'à 10"}, {"type": "flashcard", "front": "Uno", "back": "Un", "pronunciation": ""}, {"type": "flashcard", "front": "Due", "back": "Deux", "pronunciation": ""}, {"type": "flashcard", "front": "Tre", "back": "Trois", "pronunciation": ""}, {"type": "flashcard", "front": "Quattro", "back": "Quatre", "pronunciation": ""}, {"type": "flashcard", "front": "Cinque", "back": "Cinq", "pronunciation": ""}, {"type": "flashcard", "front": "Dieci", "back": "Dix", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Uno' ?", "options": [{"text": "Deux", "correct": false}, {"text": "Un", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "days", "title": "I Giorni", "desc": "Lundi, Mardi...", "duration": "3 min", "xp": 10, "locked": false, icon: Calendar, "slides": [{"type": "intro", "title": "I Giorni", "content": "Vocabulaire: Lundi, Mardi..."}, {"type": "flashcard", "front": "Lunedì", "back": "Lundi", "pronunciation": ""}, {"type": "flashcard", "front": "Martedì", "back": "Mardi", "pronunciation": ""}, {"type": "flashcard", "front": "Mercoledì", "back": "Mercredi", "pronunciation": ""}, {"type": "flashcard", "front": "Sabato", "back": "Samedi", "pronunciation": ""}, {"type": "flashcard", "front": "Domenica", "back": "Dimanche", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Lunedì' ?", "options": [{"text": "Mardi", "correct": false}, {"text": "Lundi", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "months", "title": "I Mesi", "desc": "Janvier à Décembre", "duration": "3 min", "xp": 10, "locked": false, icon: CalendarDays, "slides": [{"type": "intro", "title": "I Mesi", "content": "Vocabulaire: Janvier à Décembre"}, {"type": "flashcard", "front": "Gennaio", "back": "Janvier", "pronunciation": ""}, {"type": "flashcard", "front": "Febbraio", "back": "Février", "pronunciation": ""}, {"type": "flashcard", "front": "Agosto", "back": "Août", "pronunciation": ""}, {"type": "flashcard", "front": "Settembre", "back": "Septembre", "pronunciation": ""}, {"type": "flashcard", "front": "Natale", "back": "Noël (Décembre)", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Gennaio' ?", "options": [{"text": "Février", "correct": false}, {"text": "Janvier", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "seasons", "title": "Le Stagioni", "desc": "Été, Hiver...", "duration": "3 min", "xp": 10, "locked": false, icon: SunSnow, "slides": [{"type": "intro", "title": "Le Stagioni", "content": "Vocabulaire: Été, Hiver..."}, {"type": "flashcard", "front": "Primavera", "back": "Printemps", "pronunciation": ""}, {"type": "flashcard", "front": "Estate", "back": "Été", "pronunciation": ""}, {"type": "flashcard", "front": "Autunno", "back": "Automne", "pronunciation": ""}, {"type": "flashcard", "front": "Inverno", "back": "Hiver", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Primavera' ?", "options": [{"text": "Été", "correct": false}, {"text": "Printemps", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "directions", "title": "Direzioni", "desc": "Gauche, Droite...", "duration": "3 min", "xp": 10, "locked": false, icon: Compass, "slides": [{"type": "intro", "title": "Direzioni", "content": "Vocabulaire: Gauche, Droite..."}, {"type": "flashcard", "front": "Sinistra", "back": "Gauche", "pronunciation": ""}, {"type": "flashcard", "front": "Destra", "back": "Droite", "pronunciation": ""}, {"type": "flashcard", "front": "Dritto", "back": "Tout droit", "pronunciation": ""}, {"type": "flashcard", "front": "Nord", "back": "Nord", "pronunciation": ""}, {"type": "flashcard", "front": "Sud", "back": "Sud", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Sinistra' ?", "options": [{"text": "Droite", "correct": false}, {"text": "Gauche", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "clothes", "title": "I Vestiti", "desc": "Chemise, Pantalon...", "duration": "3 min", "xp": 10, "locked": false, icon: Shirt, "slides": [{"type": "intro", "title": "I Vestiti", "content": "Vocabulaire: Chemise, Pantalon..."}, {"type": "flashcard", "front": "Camicia", "back": "Chemise", "pronunciation": ""}, {"type": "flashcard", "front": "Pantaloni", "back": "Pantalon", "pronunciation": ""}, {"type": "flashcard", "front": "Scarpe", "back": "Chaussures", "pronunciation": ""}, {"type": "flashcard", "front": "Vestito", "back": "Robe", "pronunciation": ""}, {"type": "flashcard", "front": "Cappotto", "back": "Manteau", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Camicia' ?", "options": [{"text": "Pantalon", "correct": false}, {"text": "Chemise", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "body", "title": "Il Corpo", "desc": "Tête, Main, Pied...", "duration": "3 min", "xp": 10, "locked": false, icon: Users, "slides": [{"type": "intro", "title": "Il Corpo", "content": "Vocabulaire: Tête, Main, Pied..."}, {"type": "flashcard", "front": "Testa", "back": "Tête", "pronunciation": ""}, {"type": "flashcard", "front": "Mano", "back": "Main", "pronunciation": ""}, {"type": "flashcard", "front": "Piede", "back": "Pied", "pronunciation": ""}, {"type": "flashcard", "front": "Occhi", "back": "Yeux", "pronunciation": ""}, {"type": "flashcard", "front": "Bocca", "back": "Bouche", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Testa' ?", "options": [{"text": "Main", "correct": false}, {"text": "Tête", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "house", "title": "La Casa", "desc": "Cuisine, Lit...", "duration": "3 min", "xp": 10, "locked": false, icon: Home, "slides": [{"type": "intro", "title": "La Casa", "content": "Vocabulaire: Cuisine, Lit..."}, {"type": "flashcard", "front": "Cucina", "back": "Cuisine", "pronunciation": ""}, {"type": "flashcard", "front": "Bagno", "back": "Salle de bain", "pronunciation": ""}, {"type": "flashcard", "front": "Letto", "back": "Lit", "pronunciation": ""}, {"type": "flashcard", "front": "Finestra", "back": "Fenêtre", "pronunciation": ""}, {"type": "flashcard", "front": "Porta", "back": "Porte", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cucina' ?", "options": [{"text": "Salle de bain", "correct": false}, {"text": "Cuisine", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "city", "title": "La Città", "desc": "Rue, Place, Magasin...", "duration": "3 min", "xp": 10, "locked": false, icon: Building, "slides": [{"type": "intro", "title": "La Città", "content": "Vocabulaire: Rue, Place, Magasin..."}, {"type": "flashcard", "front": "Strada", "back": "Rue", "pronunciation": ""}, {"type": "flashcard", "front": "Piazza", "back": "Place", "pronunciation": ""}, {"type": "flashcard", "front": "Negozio", "back": "Magasin", "pronunciation": ""}, {"type": "flashcard", "front": "Chiesa", "back": "Église", "pronunciation": ""}, {"type": "flashcard", "front": "Scuola", "back": "École", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Strada' ?", "options": [{"text": "Place", "correct": false}, {"text": "Rue", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "animals", "title": "Gli Animali", "desc": "Chien, Chat...", "duration": "3 min", "xp": 10, "locked": false, icon: Cat, "slides": [{"type": "intro", "title": "Gli Animali", "content": "Vocabulaire: Chien, Chat..."}, {"type": "flashcard", "front": "Cane", "back": "Chien", "pronunciation": ""}, {"type": "flashcard", "front": "Gatto", "back": "Chat", "pronunciation": ""}, {"type": "flashcard", "front": "Uccello", "back": "Oiseau", "pronunciation": ""}, {"type": "flashcard", "front": "Pesce", "back": "Poisson", "pronunciation": ""}, {"type": "flashcard", "front": "Cavallo", "back": "Cheval", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cane' ?", "options": [{"text": "Chat", "correct": false}, {"text": "Chien", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "nature", "title": "La Natura", "desc": "Montagne, Mer...", "duration": "3 min", "xp": 10, "locked": false, icon: Mountain, "slides": [{"type": "intro", "title": "La Natura", "content": "Vocabulaire: Montagne, Mer..."}, {"type": "flashcard", "front": "Montagna", "back": "Montagne", "pronunciation": ""}, {"type": "flashcard", "front": "Mare", "back": "Mer", "pronunciation": ""}, {"type": "flashcard", "front": "Sole", "back": "Soleil", "pronunciation": ""}, {"type": "flashcard", "front": "Luna", "back": "Lune", "pronunciation": ""}, {"type": "flashcard", "front": "Albero", "back": "Arbre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Montagna' ?", "options": [{"text": "Mer", "correct": false}, {"text": "Montagne", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "transports", "title": "Trasporti", "desc": "Voiture, Train...", "duration": "3 min", "xp": 10, "locked": false, icon: Car, "slides": [{"type": "intro", "title": "Trasporti", "content": "Vocabulaire: Voiture, Train..."}, {"type": "flashcard", "front": "Macchina", "back": "Voiture", "pronunciation": ""}, {"type": "flashcard", "front": "Treno", "back": "Train", "pronunciation": ""}, {"type": "flashcard", "front": "Aereo", "back": "Avion", "pronunciation": ""}, {"type": "flashcard", "front": "Bici", "back": "Vélo", "pronunciation": ""}, {"type": "flashcard", "front": "Bus", "back": "Bus", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Macchina' ?", "options": [{"text": "Train", "correct": false}, {"text": "Voiture", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "fruits", "title": "La Frutta", "desc": "Pomme, Banane...", "duration": "3 min", "xp": 10, "locked": false, icon: Apple, "slides": [{"type": "intro", "title": "La Frutta", "content": "Vocabulaire: Pomme, Banane..."}, {"type": "flashcard", "front": "Mela", "back": "Pomme", "pronunciation": ""}, {"type": "flashcard", "front": "Banana", "back": "Banane", "pronunciation": ""}, {"type": "flashcard", "front": "Arancia", "back": "Orange", "pronunciation": ""}, {"type": "flashcard", "front": "Uva", "back": "Raisin", "pronunciation": ""}, {"type": "flashcard", "front": "Limone", "back": "Citron", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Mela' ?", "options": [{"text": "Banane", "correct": false}, {"text": "Pomme", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]}, {"id": "feelings", "title": "Le Emozioni", "desc": "Heureux, Triste...", "duration": "3 min", "xp": 10, "locked": false, icon: Smile, "slides": [{"type": "intro", "title": "Le Emozioni", "content": "Vocabulaire: Heureux, Triste..."}, {"type": "flashcard", "front": "Felice", "back": "Heureux", "pronunciation": ""}, {"type": "flashcard", "front": "Triste", "back": "Triste", "pronunciation": ""}, {"type": "flashcard", "front": "Arrabbiato", "back": "En colère", "pronunciation": ""}, {"type": "flashcard", "front": "Stanco", "back": "Fatigué", "pronunciation": ""}, {"type": "flashcard", "front": "Innamorato", "back": "Amoureux", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Felice' ?", "options": [{"text": "Triste", "correct": false}, {"text": "Heureux", "correct": true}]}, {"type": "success", "title": "Fini !", "content": "Bravo !"}]},
+      {
+        id: 'adj-italian-100',
+        title: '100 Adjectifs Italiens',
+        description: 'Les adjectifs incontournables à connaître',
+        icon: 'Sparkles',
+        section: 'micro',
+        flashcards: [
+          { italian: 'bello', french: 'beau', example: 'Una bella casa', exampleFr: 'Une belle maison' },
+          { italian: 'brutto', french: 'laid', example: 'Un brutto quadro', exampleFr: 'Un tableau laid' },
+          { italian: 'grande', french: 'grand', example: 'Una grande città', exampleFr: 'Une grande ville' },
+          { italian: 'piccolo', french: 'petit', example: 'Un piccolo gatto', exampleFr: 'Un petit chat' },
+          { italian: 'rosso', french: 'rouge', example: 'La mela rossa', exampleFr: 'La pomme rouge' },
+          { italian: 'blu', french: 'bleu', example: 'Il cielo blu', exampleFr: 'Le ciel bleu' },
+          { italian: 'verde', french: 'vert', example: 'L\'erba verde', exampleFr: 'L\'herbe verte' },
+          { italian: 'giallo', french: 'jaune', example: 'Un fiore giallo', exampleFr: 'Une fleur jaune' },
+          { italian: 'bianco', french: 'blanc', example: 'La neve bianca', exampleFr: 'La neige blanche' },
+          { italian: 'nero', french: 'noir', example: 'Un gatto nero', exampleFr: 'Un chat noir' },
+          { italian: 'caldo', french: 'chaud', example: 'Il sole è caldo', exampleFr: 'Le soleil est chaud' },
+          { italian: 'freddo', french: 'froid', example: 'L\'acqua è fredda', exampleFr: 'L\'eau est froide' },
+          { italian: 'caro', french: 'cher', example: 'Un caro amico', exampleFr: 'Un ami cher' },
+          { italian: 'facile', french: 'facile', example: 'Un esercizio facile', exampleFr: 'Un exercice facile' },
+          { italian: 'difficile', french: 'difficile', example: 'Un problema difficile', exampleFr: 'Un problème difficile' },
+          { italian: 'buono', french: 'bon', example: 'Un buono spettacolo', exampleFr: 'Un bon spectacle' },
+          { italian: 'cattivo', french: 'mauvais', example: 'Un cattivo comportamento', exampleFr: 'Un mauvais comportement' },
+          { italian: 'nuovo', french: 'nouveau', example: 'Un nuovo libro', exampleFr: 'Un nouveau livre' },
+          { italian: 'vecchio', french: 'vieux', example: 'Una vecchia casa', exampleFr: 'Une vieille maison' },
+          { italian: 'giovane', french: 'jeune', example: 'Un giovane ragazzo', exampleFr: 'Un jeune garçon' },
+          { italian: 'alto', french: 'haut', example: 'Un montagna alta', exampleFr: 'Une montagne haute' },
+          { italian: 'basso', french: 'bas', example: 'Un soffitto basso', exampleFr: 'Un plafond bas' },
+          { italian: 'lungo', french: 'long', example: 'Un lungo viaggio', exampleFr: 'Un long voyage' },
+          { italian: 'corto', french: 'court', example: 'Una gonna corta', exampleFr: 'Une jupe courte' },
+          { italian: 'largo', french: 'large', example: 'Una larga strada', exampleFr: 'Une route large' },
+          { italian: 'stretto', french: 'étroit', example: 'Una strada stretta', exampleFr: 'Une rue étroite' },
+          { italian: 'forte', french: 'fort', example: 'Un forte abbraccio', exampleFr: 'Une forte étreinte' },
+          { italian: 'debole', french: 'faible', example: 'Un debole segnale', exampleFr: 'Un faible signal' },
+          { italian: 'pieno', french: 'plein', example: 'Un piatto pieno', exampleFr: 'Une assiette pleine' },
+          { italian: 'vuoto', french: 'vide', example: 'Una bottiglia vuota', exampleFr: 'Une bouteille vide' },
+          { italian: 'felice', french: 'heureux', example: 'Un bambino felice', exampleFr: 'Un enfant heureux' },
+          { italian: 'triste', french: 'triste', example: 'Una storia triste', exampleFr: 'Une histoire triste' },
+          { italian: 'arrabbiato', french: 'fâché', example: 'Un uomo arrabbiato', exampleFr: 'Un homme fâché' },
+          { italian: 'stanco', french: 'fatigué', example: 'Una persona stanca', exampleFr: 'Une personne fatiguée' },
+          { italian: 'sveglio', french: 'éveillé', example: 'Un ragazzo sveglio', exampleFr: 'Un garçon éveillé' },
+          { italian: 'affamato', french: 'affamé', example: 'Una persona affamata', exampleFr: 'Une personne affamée' },
+          { italian: 'assetato', french: 'assoiffé', example: 'Un uomo assetato', exampleFr: 'Un homme assoiffé' },
+          { italian: 'sporco', french: 'sale', example: 'Un abito sporco', exampleFr: 'Un vêtement sale' },
+          { italian: 'pulito', french: 'propre', example: 'Una casa pulita', exampleFr: 'Une maison propre' },
+          { italian: 'dolce', french: 'doux', example: 'Un dolce sapore', exampleFr: 'Un goût doux' },
+          { italian: 'amaro', french: 'amer', example: 'Un sapore amaro', exampleFr: 'Un goût amer' },
+          { italian: 'salato', french: 'salé', example: 'Un cibo salato', exampleFr: 'Un aliment salé' },
+          { italian: 'acido', french: 'acide', example: 'Un sapore acido', exampleFr: 'Un goût acide' },
+          { italian: 'duro', french: 'dur', example: 'Un pane duro', exampleFr: 'Un pain dur' },
+          { italian: 'morbido', french: 'mou', example: 'Un cuscino morbido', exampleFr: 'Un coussin mou' },
+          { italian: 'veloce', french: 'rapide', example: 'Una macchina veloce', exampleFr: 'Une voiture rapide' },
+          { italian: 'lento', french: 'lent', example: 'Un movimento lento', exampleFr: 'Un mouvement lent' },
+          { italian: 'ricco', french: 'riche', example: 'Un uomo ricco', exampleFr: 'Un homme riche' },
+          { italian: 'povero', french: 'pauvre', example: 'Una famiglia povera', exampleFr: 'Une famille pauvre' }
+        ],
+        quiz: [
+          {
+            question: 'Quel adjectif signifie "facile"?',
+            options: ['difficile', 'facile', 'complicato'],
+            correct: 1
+          },
+          {
+            question: 'Comment dit-on "nouveau" en italien?',
+            options: ['vecchio', 'nuovo', 'moderno'],
+            correct: 1
+          },
+          {
+            question: '"Triste" signifie:',
+            options: ['heureux', 'content', 'triste'],
+            correct: 2
+          }
+        ]
+      },
+      {
+        id: 'adj-utiles-100',
+        title: '100 Adjectifs Utiles',
+        description: 'Les adjectifs les plus pratiques du quotidien',
+        icon: 'BookMarked',
+        section: 'micro',
+        flashcards: [
+          { italian: 'importante', french: 'important', example: 'Una cosa importante', exampleFr: 'Une chose importante' },
+          { italian: 'interessante', french: 'intéressant', example: 'Un libro interessante', exampleFr: 'Un livre intéressant' },
+          { italian: 'noioso', french: 'ennuyeux', example: 'Un film noioso', exampleFr: 'Un film ennuyeux' },
+          { italian: 'simpatico', french: 'sympathique', example: 'Una persona simpatica', exampleFr: 'Une personne sympathique' },
+          { italian: 'antipatico', french: 'antipathique', example: 'Un comportamento antipatico', exampleFr: 'Un comportement antipathique' },
+          { italian: 'intelligente', french: 'intelligent', example: 'Un bambino intelligente', exampleFr: 'Un enfant intelligent' },
+          { italian: 'stupido', french: 'stupide', example: 'Una domanda stupida', exampleFr: 'Une question stupide' },
+          { italian: 'colto', french: 'cultivé', example: 'Una persona colta', exampleFr: 'Une personne cultivée' },
+          { italian: 'ignorante', french: 'ignorant', example: 'Un atteggiamento ignorante', exampleFr: 'Une attitude ignorante' },
+          { italian: 'generoso', french: 'généreux', example: 'Un uomo generoso', exampleFr: 'Un homme généreux' },
+          { italian: 'avaro', french: 'avare', example: 'Un uomo avaro', exampleFr: 'Un homme avare' },
+          { italian: 'gentile', french: 'gentil', example: 'Una persona gentile', exampleFr: 'Une personne gentille' },
+          { italian: 'scortese', french: 'impoli', example: 'Un comportamento scortese', exampleFr: 'Un comportement impoli' },
+          { italian: 'onesto', french: 'honnête', example: 'Un uomo onesto', exampleFr: 'Un homme honnête' },
+          { italian: 'disonesto', french: 'malhonnête', example: 'Una persona disonesta', exampleFr: 'Une personne malhonnête' },
+          { italian: 'coraggioso', french: 'courageux', example: 'Un soldato coraggioso', exampleFr: 'Un soldat courageux' },
+          { italian: 'pauroso', french: 'peureux', example: 'Una persona paurosa', exampleFr: 'Une personne peureuse' },
+          { italian: 'orgoglioso', french: 'fier', example: 'Un uomo orgoglioso', exampleFr: 'Un homme fier' },
+          { italian: 'umile', french: 'humble', example: 'Una persona umile', exampleFr: 'Une personne humble' },
+          { italian: 'leale', french: 'loyal', example: 'Un amico leale', exampleFr: 'Un ami loyal' },
+          { italian: 'sleale', french: 'déloyal', example: 'Un amico sleale', exampleFr: 'Un ami déloyal' },
+          { italian: 'vero', french: 'vrai', example: 'Un amico vero', exampleFr: 'Un ami vrai' },
+          { italian: 'falso', french: 'faux', example: 'Una storia falsa', exampleFr: 'Une histoire fausse' },
+          { italian: 'raro', french: 'rare', example: 'Un evento raro', exampleFr: 'Un événement rare' },
+          { italian: 'comune', french: 'commun', example: 'Un nome comune', exampleFr: 'Un nom commun' },
+          { italian: 'strano', french: 'étrange', example: 'Un comportamento strano', exampleFr: 'Un comportement étrange' },
+          { italian: 'normale', french: 'normal', example: 'Una cosa normale', exampleFr: 'Une chose normale' },
+          { italian: 'naturale', french: 'naturel', example: 'Un aspetto naturale', exampleFr: 'Un aspect naturel' },
+          { italian: 'artificiale', french: 'artificiel', example: 'Un fiore artificiale', exampleFr: 'Une fleur artificielle' },
+          { italian: 'reale', french: 'réel', example: 'Un fatto reale', exampleFr: 'Un fait réel' },
+          { italian: 'possibile', french: 'possible', example: 'Una soluzione possibile', exampleFr: 'Une solution possible' },
+          { italian: 'impossibile', french: 'impossible', example: 'Un compito impossibile', exampleFr: 'Une tâche impossible' },
+          { italian: 'probabile', french: 'probable', example: 'Un evento probabile', exampleFr: 'Un événement probable' },
+          { italian: 'improbabile', french: 'improbable', example: 'Una cosa improbabile', exampleFr: 'Une chose improbable' },
+          { italian: 'certo', french: 'certain', example: 'Un fatto certo', exampleFr: 'Un fait certain' },
+          { italian: 'incerto', french: 'incertain', example: 'Una situazione incerta', exampleFr: 'Une situation incertaine' },
+          { italian: 'sicuro', french: 'sûr', example: 'Una persona sicura', exampleFr: 'Une personne sûre' },
+          { italian: 'insicuro', french: 'insûr', example: 'Un uomo insicuro', exampleFr: 'Un homme peu sûr' },
+          { italian: 'pubblico', french: 'public', example: 'Un luogo pubblico', exampleFr: 'Un lieu public' },
+          { italian: 'privato', french: 'privé', example: 'Una proprietà privata', exampleFr: 'Une propriété privée' }
+        ],
+        quiz: [
+          {
+            question: '"Simpatico" signifie:',
+            options: ['antipatico', 'sympathique', 'timido'],
+            correct: 1
+          },
+          {
+            question: 'Quel adjectif signifie "gentil"?',
+            options: ['scortese', 'gentile', 'cortese'],
+            correct: 1
+          },
+          {
+            question: '"Onesto" signifie:',
+            options: ['disonesto', 'honnête', 'sincero'],
+            correct: 1
+          }
+        ]
+      },
+      {
+        id: 'vocab-routine-daily',
+        title: 'Vocabulaire Avancé: Routine Quotidienne',
+        description: 'Vocabulaire pour décrire votre routine et votre vie quotidienne',
+        icon: 'Sun',
+        section: 'micro',
+        flashcards: [
+          { italian: 'svegliarsi', french: 'se réveiller', example: 'Mi sveglio alle sette', exampleFr: 'Je me réveille à sept heures' },
+          { italian: 'lavarsi', french: 'se laver', example: 'Mi lavo le mani', exampleFr: 'Je me lave les mains' },
+          { italian: 'vestirsi', french: 's\'habiller', example: 'Mi vesto velocemente', exampleFr: 'Je m\'habille rapidement' },
+          { italian: 'colazione', french: 'petit-déjeuner', example: 'Faccio colazione alle otto', exampleFr: 'Je prends le petit-déj à huit heures' },
+          { italian: 'caffè', french: 'café', example: 'Bevo un caffè', exampleFr: 'Je bois un café' },
+          { italian: 'pane', french: 'pain', example: 'Mangio il pane tostato', exampleFr: 'Je mange du pain grillé' },
+          { italian: 'latte', french: 'lait', example: 'Aggiungo il latte', exampleFr: 'J\'ajoute du lait' },
+          { italian: 'doccia', french: 'douche', example: 'Prendo una doccia', exampleFr: 'Je prends une douche' },
+          { italian: 'bagno', french: 'salle de bain', example: 'Vado in bagno', exampleFr: 'Je vais à la salle de bain' },
+          { italian: 'specchio', french: 'miroir', example: 'Mi guardo nello specchio', exampleFr: 'Je me regarde dans le miroir' },
+          { italian: 'spazzolino', french: 'brosse à dents', example: 'Uso lo spazzolino', exampleFr: 'J\'utilise la brosse à dents' },
+          { italian: 'dente', french: 'dent', example: 'Mi lavo i denti', exampleFr: 'Je me lave les dents' },
+          { italian: 'lavoro', french: 'travail', example: 'Vado al lavoro', exampleFr: 'Je vais au travail' },
+          { italian: 'ufficio', french: 'bureau', example: 'Lavoro in ufficio', exampleFr: 'Je travaille au bureau' },
+          { italian: 'riunione', french: 'réunion', example: 'Ho una riunione', exampleFr: 'J\'ai une réunion' },
+          { italian: 'almeno', french: 'au moins', example: 'Almeno due ore', exampleFr: 'Au moins deux heures' },
+          { italian: 'pranzo', french: 'déjeuner', example: 'Faccio pranzo a mezzogiorno', exampleFr: 'Je déjeune à midi' },
+          { italian: 'menu', french: 'menu', example: 'Leggo il menu', exampleFr: 'Je lis le menu' },
+          { italian: 'ristorante', french: 'restaurant', example: 'Vado al ristorante', exampleFr: 'Je vais au restaurant' },
+          { italian: 'cameriere', french: 'serveur', example: 'Chiamo il cameriere', exampleFr: 'J\'appelle le serveur' },
+          { italian: 'conto', french: 'addition', example: 'Mi dai il conto?', exampleFr: 'Tu me donnes l\'addition?' },
+          { italian: 'pomeriggio', french: 'après-midi', example: 'Nel pomeriggio lavoro', exampleFr: 'L\'après-midi je travaille' },
+          { italian: 'rientro', french: 'retour', example: 'Rientro a casa', exampleFr: 'Je rentre à la maison' },
+          { italian: 'cena', french: 'dîner', example: 'Faccio cena alle sette', exampleFr: 'Je dîne à sept heures' },
+          { italian: 'cucinare', french: 'cuisiner', example: 'Cucino la pasta', exampleFr: 'Je cuisine les pâtes' },
+          { italian: 'piatto', french: 'plat', example: 'Un piatto di pasta', exampleFr: 'Un plat de pâtes' },
+          { italian: 'posate', french: 'couverts', example: 'Le posate sul tavolo', exampleFr: 'Les couverts sur la table' },
+          { italian: 'bicchiere', french: 'verre', example: 'Un bicchiere d\'acqua', exampleFr: 'Un verre d\'eau' },
+          { italian: 'ricetta', french: 'recette', example: 'Seguo la ricetta', exampleFr: 'Je suis la recette' },
+          { italian: 'ingrediente', french: 'ingrédient', example: 'Ho tutti gli ingredienti', exampleFr: 'J\'ai tous les ingrédients' },
+          { italian: 'televisione', french: 'télévision', example: 'Guardo la televisione', exampleFr: 'Je regarde la télévision' },
+          { italian: 'film', french: 'film', example: 'Guardo un film', exampleFr: 'Je regarde un film' },
+          { italian: 'libro', french: 'livre', example: 'Leggo un libro', exampleFr: 'Je lis un livre' },
+          { italian: 'pagina', french: 'page', example: 'Leggo una pagina', exampleFr: 'Je lis une page' },
+          { italian: 'musica', french: 'musique', example: 'Ascolto la musica', exampleFr: 'J\'écoute la musique' },
+          { italian: 'canzone', french: 'chanson', example: 'Una bella canzone', exampleFr: 'Une belle chanson' },
+          { italian: 'divertimento', french: 'amusement', example: 'Mi diverto', exampleFr: 'Je m\'amuse' },
+          { italian: 'amici', french: 'amis', example: 'Vedo i miei amici', exampleFr: 'Je vois mes amis' },
+          { italian: 'famiglia', french: 'famille', example: 'Sono con la mia famiglia', exampleFr: 'Je suis avec ma famille' },
+          { italian: 'letto', french: 'lit', example: 'Vado a letto', exampleFr: 'Je vais au lit' },
+          { italian: 'dormire', french: 'dormir', example: 'Dormo bene', exampleFr: 'Je dors bien' },
+          { italian: 'sonno', french: 'sommeil', example: 'Ho sonno', exampleFr: 'J\'ai sommeil' },
+          { italian: 'sveglia', french: 'alarme', example: 'Metto la sveglia', exampleFr: 'Je mets l\'alarme' },
+          { italian: 'orologio', french: 'horloge', example: 'Che ora è?', exampleFr: 'Quelle heure est-il?' }
+        ],
+        quiz: [
+          {
+            question: '"Svegliarsi" signifie:',
+            options: ['dormir', 'se réveiller', 'riposare'],
+            correct: 1
+          },
+          {
+            question: 'Quel mot signifie "petit-déjeuner"?',
+            options: ['pranzo', 'colazione', 'cena'],
+            correct: 1
+          },
+          {
+            question: '"Doccia" signifie:',
+            options: ['vasca', 'doccia', 'bagno'],
+            correct: 1
+          },
+          {
+            question: 'Comment dit-on "dîner" en italien?',
+            options: ['colazione', 'pranzo', 'cena'],
+            correct: 2
+          },
+          {
+            question: '"Cucina" signifie:',
+            options: ['cuisine', 'cuisinier', 'cuisiner'],
+            correct: 0
+          }
+        ]
+      },
+    ]
+  },
+  thematic: {
+    title: 'Modules Thématiques',
+    subtitle: 'Ciblez votre apprentissage selon vos besoins',
+    intro: 'Objectif: Phrases de base & situations',
+    items: [
+      { 
+        id: 'food', 
+        title: 'Cuisine & Restaurant', 
+        desc: 'Déchiffrer le menu, commander, payer l\'addition', 
+        count: '12 leçons', 
+        progress: 15,
+        icon: Utensils,
+        locked: false,
+        slides: [
+           { type: 'intro', title: 'Au Restaurant', content: 'Vocabulaire essentiel pour survivre à table.' },
+           { type: 'flashcard', front: 'Il conto, per favore', back: 'L\'addition, s\'il vous plaît', pronunciation: '/il kon-to/' },
+           { type: 'flashcard', front: 'È squisito!', back: 'C\'est délicieux !', pronunciation: '/è skou-i-zi-to/', context: 'Pour faire plaisir au chef.' },
+           { type: 'flashcard', front: 'Acqua naturale / frizzante', back: 'Eau plate / gazeuse', pronunciation: '/a-coua/', context: 'On vous demandera toujours laquelle vous voulez.' },
+           { type: 'quiz', question: 'Comment demander de l\'eau gazeuse ?', options: [{text: 'Acqua naturale', correct: false}, {text: 'Acqua frizzante', correct: true}] }
+        ]
+      },
+      { 
+        id: 'social', 
+        title: 'Rencontres & Présentations', 
+        desc: 'Comment vous appelez-vous ? D\'où venez-vous ?', 
+        count: '8 leçons', 
+        progress: 0,
+        icon: MessageCircle,
+        locked: false,
+        slides: [
+          { type: 'intro', title: 'Faire Connaissance', content: 'Les bases pour briser la glace.' },
+          { type: 'flashcard', front: 'Come ti chiami?', back: 'Comment t\'appelles-tu ?', pronunciation: '/ko-mé ti kia-mi/', context: 'Informel' },
+          { type: 'flashcard', front: 'Mi chiamo...', back: 'Je m\'appelle...', pronunciation: '/mi kia-mo/', context: '' },
+          { type: 'flashcard', front: 'Piacere', back: 'Enchanté', pronunciation: '/pia-tché-ré/', context: 'À dire en serrant la main.' },
+          { type: 'quiz', question: 'Répondez à : Come ti chiami?', options: [{text: 'Piacere Marc', correct: false}, {text: 'Mi chiamo Marc', correct: true}] }
+        ]
+      },
+      { 
+        id: 'travel', 
+        title: 'Voyage & Transports', 
+        desc: 'Aéroport, Gare, Taxi et Directions', 
+        count: '15 leçons', 
+        progress: 0,
+        icon: Train,
+        locked: true
+      },
+{
+        id: 'theme_1',
+        title: 'La Festa',
+        desc: 'Vocabulaire: la festa',
+        count: '62 mots',
+        progress: 0,
+        icon: PartyPopper,
+        locked: false,
+        slides: [{"type": "intro", "title": "La Festa", "content": "Découvrons ensemble le vocabulaire pour : La Festa"}, {"type": "flashcard", "front": "Festa (la)", "back": "la fête", "pronunciation": ""}, {"type": "flashcard", "front": "...in piazza", "back": "fête en plein air", "pronunciation": ""}, {"type": "flashcard", "front": "...di compleanno", "back": "fête", "pronunciation": ""}, {"type": "flashcard", "front": "...di matrimonio", "back": "fête de mariage", "pronunciation": ""}, {"type": "flashcard", "front": "...della mamma", "back": "fête des mères", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Festa (la)' ?", "options": [{"text": "fête en plein air", "correct": false}, {"text": "la fête", "correct": true}]}, {"type": "flashcard", "front": "...della donna", "back": "fête des femmes", "pronunciation": ""}, {"type": "flashcard", "front": "...in maschera", "back": "soirée masquée", "pronunciation": ""}, {"type": "flashcard", "front": "...in famiglia", "back": "fête en famille", "pronunciation": ""}, {"type": "flashcard", "front": "...a sorpresa", "back": "fête surprise", "pronunciation": ""}, {"type": "flashcard", "front": "Capodanno (il)", "back": "le Nouvel an", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie '...della donna' ?", "options": [{"text": "soirée masquée", "correct": false}, {"text": "fête des femmes", "correct": true}]}, {"type": "flashcard", "front": "Natale", "back": "Noël", "pronunciation": ""}, {"type": "flashcard", "front": "Pasqua", "back": "Pâques", "pronunciation": ""}, {"type": "flashcard", "front": "San Valentino (il)", "back": "la Saint-Valentin", "pronunciation": ""}, {"type": "flashcard", "front": "Carnevale (il)", "back": "le carnaval", "pronunciation": ""}, {"type": "flashcard", "front": "Luna park", "back": "la fête foraine", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Natale' ?", "options": [{"text": "Pâques", "correct": false}, {"text": "Noël", "correct": true}]}, {"type": "flashcard", "front": "Regalo (il)", "back": "le cadeau", "pronunciation": ""}, {"type": "flashcard", "front": "Musica (la)", "back": "la musique", "pronunciation": ""}, {"type": "flashcard", "front": "Danza (la)", "back": "la danse", "pronunciation": ""}, {"type": "flashcard", "front": "Discoteca (la)", "back": "la discothèque", "pronunciation": ""}, {"type": "flashcard", "front": "Ballo (il)", "back": "le bal", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Regalo (il)' ?", "options": [{"text": "la musique", "correct": false}, {"text": "le cadeau", "correct": true}]}, {"type": "flashcard", "front": "Invitato", "back": "invité", "pronunciation": ""}, {"type": "flashcard", "front": "Ospiti (gli)", "back": "les invités", "pronunciation": ""}, {"type": "flashcard", "front": "Auguri", "back": "les souhaits", "pronunciation": ""}, {"type": "flashcard", "front": "Brindisi (il)", "back": "le toast", "pronunciation": ""}, {"type": "flashcard", "front": "Ferragosto (il)", "back": "le 15 août", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Invitato' ?", "options": [{"text": "les invités", "correct": false}, {"text": "invité", "correct": true}]}, {"type": "flashcard", "front": "Abito da sera (l’)", "back": "la robe de soirée", "pronunciation": ""}, {"type": "flashcard", "front": "Fiera (la)", "back": "la foire", "pronunciation": ""}, {"type": "flashcard", "front": "Battesimo (il)", "back": "le baptême", "pronunciation": ""}, {"type": "flashcard", "front": "Cerimonia (la)", "back": "la cérémonie", "pronunciation": ""}, {"type": "flashcard", "front": "Ricevimento (il)", "back": "la réception", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Abito da sera (l’)' ?", "options": [{"text": "la foire", "correct": false}, {"text": "la robe de soirée", "correct": true}]}, {"type": "flashcard", "front": "Celebrazione (la)", "back": "la célébration", "pronunciation": ""}, {"type": "flashcard", "front": "Coriandoli (i)", "back": "les bougies", "pronunciation": ""}, {"type": "flashcard", "front": "Spettacolo (lo)", "back": "le spectacle", "pronunciation": ""}, {"type": "flashcard", "front": "Lotteria (la)", "back": "la loterie", "pronunciation": ""}, {"type": "flashcard", "front": "Gioco (il)", "back": "le jeu", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Celebrazione (la)' ?", "options": [{"text": "les bougies", "correct": false}, {"text": "la célébration", "correct": true}]}, {"type": "flashcard", "front": "Sala da ballo (la)", "back": "la salle des fêtes", "pronunciation": ""}, {"type": "flashcard", "front": "Decorazione (la)", "back": "la décoration", "pronunciation": ""}, {"type": "flashcard", "front": "Addobbo (l’)", "back": "l’ornement", "pronunciation": ""}, {"type": "flashcard", "front": "Luci (le)", "back": "les lumières", "pronunciation": ""}, {"type": "flashcard", "front": "Cibo (il)", "back": "la nourriture", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Sala da ballo (la)' ?", "options": [{"text": "la décoration", "correct": false}, {"text": "la salle des fêtes", "correct": true}]}, {"type": "flashcard", "front": "Bevanda (la)", "back": "la boisson", "pronunciation": ""}, {"type": "flashcard", "front": "Torta (la)", "back": "le gâteau", "pronunciation": ""}, {"type": "flashcard", "front": "...nuziale", "back": "la pièce montée", "pronunciation": ""}, {"type": "flashcard", "front": "...di compleanno (la)", "back": "le gâteau", "pronunciation": ""}, {"type": "flashcard", "front": "Buffet (il)", "back": "le buffet", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Bevanda (la)' ?", "options": [{"text": "le gâteau", "correct": false}, {"text": "la boisson", "correct": true}]}, {"type": "flashcard", "front": "Fotografo (il)", "back": "le photographe", "pronunciation": ""}, {"type": "flashcard", "front": "Mago (il)", "back": "le magicien", "pronunciation": ""}, {"type": "flashcard", "front": "Palloncini (i)", "back": "les ballons", "pronunciation": ""}, {"type": "flashcard", "front": "Candeline (le)", "back": "les bougies", "pronunciation": ""}, {"type": "flashcard", "front": "Fiori (i)", "back": "les fleurs", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Fotografo (il)' ?", "options": [{"text": "le magicien", "correct": false}, {"text": "le photographe", "correct": true}]}, {"type": "flashcard", "front": "Confetti (i)", "back": "les dragées", "pronunciation": ""}, {"type": "flashcard", "front": "Fuochi d’artificio (il)", "back": "le feu", "pronunciation": ""}, {"type": "flashcard", "front": "Ballare", "back": "danser", "pronunciation": ""}, {"type": "flashcard", "front": "Mangiare", "back": "manger", "pronunciation": ""}, {"type": "flashcard", "front": "Bere", "back": "boire", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Confetti (i)' ?", "options": [{"text": "le feu", "correct": false}, {"text": "les dragées", "correct": true}]}, {"type": "flashcard", "front": "Brindare", "back": "porter un toast", "pronunciation": ""}, {"type": "flashcard", "front": "Divertirsi", "back": "s’amuser", "pronunciation": ""}, {"type": "flashcard", "front": "Cantare", "back": "chanter", "pronunciation": ""}, {"type": "flashcard", "front": "Festeggiare", "back": "célébrer, fêter", "pronunciation": ""}, {"type": "flashcard", "front": "Organizzare", "back": "organiser", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Brindare' ?", "options": [{"text": "s’amuser", "correct": false}, {"text": "porter un toast", "correct": true}]}, {"type": "flashcard", "front": "Scattare le foto", "back": "prendre", "pronunciation": ""}, {"type": "flashcard", "front": "Sorridere", "back": "sourire", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Scattare le foto' ?", "options": [{"text": "sourire", "correct": false}, {"text": "prendre", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en La Festa."}]
+      },
+{
+        id: 'theme_2',
+        title: 'Il Giardino',
+        desc: 'Vocabulaire: il giardino',
+        count: '66 mots',
+        progress: 0,
+        icon: Flower,
+        locked: false,
+        slides: [{"type": "intro", "title": "Il Giardino", "content": "Découvrons ensemble le vocabulaire pour : Il Giardino"}, {"type": "flashcard", "front": "Giardiniere (il)", "back": "le jardinier", "pronunciation": ""}, {"type": "flashcard", "front": "Giardinaggio (il)", "back": "le jardinage", "pronunciation": ""}, {"type": "flashcard", "front": "Pianta (la)", "back": "la plante", "pronunciation": ""}, {"type": "flashcard", "front": "Fiori (i)", "back": "les fleurs", "pronunciation": ""}, {"type": "flashcard", "front": "Albero", "back": "l’arbre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Giardiniere (il)' ?", "options": [{"text": "le jardinage", "correct": false}, {"text": "le jardinier", "correct": true}]}, {"type": "flashcard", "front": "Tronco (il)", "back": "le tronc", "pronunciation": ""}, {"type": "flashcard", "front": "Erba (l’)", "back": "l’herbe", "pronunciation": ""}, {"type": "flashcard", "front": "Prato (il)", "back": "la pelouse", "pronunciation": ""}, {"type": "flashcard", "front": "Irrigazione (l’)", "back": "l’irrigation", "pronunciation": ""}, {"type": "flashcard", "front": "Annaffiatoio (il)", "back": "l’arrosoir", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Tronco (il)' ?", "options": [{"text": "l’herbe", "correct": false}, {"text": "le tronc", "correct": true}]}, {"type": "flashcard", "front": "Aiuola (l’)", "back": "le parterre", "pronunciation": ""}, {"type": "flashcard", "front": "Arbusti (gli)", "back": "les arbustes", "pronunciation": ""}, {"type": "flashcard", "front": "Cespugli (i)", "back": "les buissons", "pronunciation": ""}, {"type": "flashcard", "front": "Semina (la)", "back": "le semis", "pronunciation": ""}, {"type": "flashcard", "front": "Sementi (i)", "back": "les graines", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Aiuola (l’)' ?", "options": [{"text": "les arbustes", "correct": false}, {"text": "le parterre", "correct": true}]}, {"type": "flashcard", "front": "Ramo (il)", "back": "la branche", "pronunciation": ""}, {"type": "flashcard", "front": "Foglie (le)", "back": "les feuilles", "pronunciation": ""}, {"type": "flashcard", "front": "Radici (le)", "back": "les racines", "pronunciation": ""}, {"type": "flashcard", "front": "Stelo (lo)", "back": "la tige", "pronunciation": ""}, {"type": "flashcard", "front": "Germe (il)", "back": "le germe", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Ramo (il)' ?", "options": [{"text": "les feuilles", "correct": false}, {"text": "la branche", "correct": true}]}, {"type": "flashcard", "front": "Rinvaso (il)", "back": "le rempotage", "pronunciation": ""}, {"type": "flashcard", "front": "Concimazione (la)", "back": "la fertilisation", "pronunciation": ""}, {"type": "flashcard", "front": "Vasi (i)", "back": "les pots", "pronunciation": ""}, {"type": "flashcard", "front": "Terrazzo (il)", "back": "la terrasse", "pronunciation": ""}, {"type": "flashcard", "front": "Casetta (la)", "back": "la cabane", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Rinvaso (il)' ?", "options": [{"text": "la fertilisation", "correct": false}, {"text": "le rempotage", "correct": true}]}, {"type": "flashcard", "front": "Orto (l’)", "back": "le potager", "pronunciation": ""}, {"type": "flashcard", "front": "Serra (la)", "back": "la serre", "pronunciation": ""}, {"type": "flashcard", "front": "...roccioso", "back": "le jardin rocheux", "pronunciation": ""}, {"type": "flashcard", "front": "...inglese", "back": "le jardin anglais", "pronunciation": ""}, {"type": "flashcard", "front": "...giapponese", "back": "le jardin japonais", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Orto (l’)' ?", "options": [{"text": "la serre", "correct": false}, {"text": "le potager", "correct": true}]}, {"type": "flashcard", "front": "...grasse (le)", "back": "les plantes grasses", "pronunciation": ""}, {"type": "flashcard", "front": "...perenni", "back": "les plantes vivaces", "pronunciation": ""}, {"type": "flashcard", "front": "...annuali", "back": "plantes annuelles", "pronunciation": ""}, {"type": "flashcard", "front": "...rampicanti", "back": "les plantes", "pronunciation": ""}, {"type": "flashcard", "front": "...da frutto", "back": "les plantes fruitières", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie '...grasse (le)' ?", "options": [{"text": "les plantes vivaces", "correct": false}, {"text": "les plantes grasses", "correct": true}]}, {"type": "flashcard", "front": "...da fiore", "back": "les plantes fleuries", "pronunciation": ""}, {"type": "flashcard", "front": "Frutta (la)", "back": "les fruits", "pronunciation": ""}, {"type": "flashcard", "front": "Verdura (la)", "back": "les légumes", "pronunciation": ""}, {"type": "flashcard", "front": "Boccioli (i)", "back": "les bourgeons", "pronunciation": ""}, {"type": "flashcard", "front": "Petali (i)", "back": "les pétales", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie '...da fiore' ?", "options": [{"text": "les fruits", "correct": false}, {"text": "les plantes fleuries", "correct": true}]}, {"type": "flashcard", "front": "Paesaggio (il)", "back": "le paysage", "pronunciation": ""}, {"type": "flashcard", "front": "Insetticida (l’)", "back": "l’insecticide", "pronunciation": ""}, {"type": "flashcard", "front": "Fertilizzante (il)", "back": "l’engrais", "pronunciation": ""}, {"type": "flashcard", "front": "Ombra (l’)", "back": "l’ombre", "pronunciation": ""}, {"type": "flashcard", "front": "Forbici (i)", "back": "les ciseaux", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Paesaggio (il)' ?", "options": [{"text": "l’insecticide", "correct": false}, {"text": "le paysage", "correct": true}]}, {"type": "flashcard", "front": "Rastrello (il)", "back": "le râteau", "pronunciation": ""}, {"type": "flashcard", "front": "Zappa (la)", "back": "la bêche", "pronunciation": ""}, {"type": "flashcard", "front": "Carriola (la)", "back": "la brouette", "pronunciation": ""}, {"type": "flashcard", "front": "Compost (il)", "back": "le compost", "pronunciation": ""}, {"type": "flashcard", "front": "Pacciamatura (la)", "back": "le paillage", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Rastrello (il)' ?", "options": [{"text": "la bêche", "correct": false}, {"text": "le râteau", "correct": true}]}, {"type": "flashcard", "front": "Insetti (gli)", "back": "les insectes", "pronunciation": ""}, {"type": "flashcard", "front": "Malattie (le)", "back": "les maladies", "pronunciation": ""}, {"type": "flashcard", "front": "Potatura (la)", "back": "la taille", "pronunciation": ""}, {"type": "flashcard", "front": "Terreno (il)", "back": "le sol", "pronunciation": ""}, {"type": "flashcard", "front": "Terra (la)", "back": "la terre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Insetti (gli)' ?", "options": [{"text": "les maladies", "correct": false}, {"text": "les insectes", "correct": true}]}, {"type": "flashcard", "front": "Umidità (l’)", "back": "l’humidité", "pronunciation": ""}, {"type": "flashcard", "front": "Raccogliere", "back": "récolter", "pronunciation": ""}, {"type": "flashcard", "front": "Annaffiare", "back": "arroser", "pronunciation": ""}, {"type": "flashcard", "front": "Concimare", "back": "fertiliser", "pronunciation": ""}, {"type": "flashcard", "front": "Coltivare", "back": "cultiver", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Umidità (l’)' ?", "options": [{"text": "récolter", "correct": false}, {"text": "l’humidité", "correct": true}]}, {"type": "flashcard", "front": "Seminare", "back": "semer", "pronunciation": ""}, {"type": "flashcard", "front": "Piantare", "back": "planter", "pronunciation": ""}, {"type": "flashcard", "front": "Rastrellare", "back": "ratisser", "pronunciation": ""}, {"type": "flashcard", "front": "Spruzzare", "back": "asperger", "pronunciation": ""}, {"type": "flashcard", "front": "Scavare", "back": "creuser", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Seminare' ?", "options": [{"text": "planter", "correct": false}, {"text": "semer", "correct": true}]}, {"type": "flashcard", "front": "Zappare", "back": "bêcher", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Zappare' ?", "options": [{"text": "Rien", "correct": false}, {"text": "bêcher", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en Il Giardino."}]
+      },
+{
+        id: 'theme_3',
+        title: 'Lo Sport',
+        desc: 'Vocabulaire: lo sport',
+        count: '66 mots',
+        progress: 0,
+        icon: Dumbbell,
+        locked: false,
+        slides: [{"type": "intro", "title": "Lo Sport", "content": "Découvrons ensemble le vocabulaire pour : Lo Sport"}, {"type": "flashcard", "front": "Sport (lo)", "back": "le sport", "pronunciation": ""}, {"type": "flashcard", "front": "Arbitro (l’)", "back": "l’arbitre", "pronunciation": ""}, {"type": "flashcard", "front": "Correre", "back": "courir", "pronunciation": ""}, {"type": "flashcard", "front": "Basket (il)", "back": "le basketball", "pronunciation": ""}, {"type": "flashcard", "front": "Cartellino rosso (il)", "back": "le carton rouge", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Sport (lo)' ?", "options": [{"text": "l’arbitre", "correct": false}, {"text": "le sport", "correct": true}]}, {"type": "flashcard", "front": "Giocare", "back": "jouer", "pronunciation": ""}, {"type": "flashcard", "front": "Calcio (il)", "back": "le football", "pronunciation": ""}, {"type": "flashcard", "front": "Pallavolo (la)", "back": "le volleyball", "pronunciation": ""}, {"type": "flashcard", "front": "Tennis (il)", "back": "le tennis", "pronunciation": ""}, {"type": "flashcard", "front": "Nuoto (il)", "back": "la natation", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Giocare' ?", "options": [{"text": "le football", "correct": false}, {"text": "jouer", "correct": true}]}, {"type": "flashcard", "front": "Ciclismo (il)", "back": "le cyclisme", "pronunciation": ""}, {"type": "flashcard", "front": "Pallacanestro (la)", "back": "le basketball", "pronunciation": ""}, {"type": "flashcard", "front": "Pallamano (la)", "back": "le handball", "pronunciation": ""}, {"type": "flashcard", "front": "Pallanuoto (la)", "back": "le water polo", "pronunciation": ""}, {"type": "flashcard", "front": "Atleta (l’)", "back": "l’athlète", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Ciclismo (il)' ?", "options": [{"text": "le basketball", "correct": false}, {"text": "le cyclisme", "correct": true}]}, {"type": "flashcard", "front": "Allenatore (l’)", "back": "le coach", "pronunciation": ""}, {"type": "flashcard", "front": "Giocatore (il)", "back": "le joueur", "pronunciation": ""}, {"type": "flashcard", "front": "Squadra (la)", "back": "l’équipe", "pronunciation": ""}, {"type": "flashcard", "front": "Partita (la)", "back": "le match", "pronunciation": ""}, {"type": "flashcard", "front": "Campionato (il)", "back": "le championnat", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Allenatore (l’)' ?", "options": [{"text": "le joueur", "correct": false}, {"text": "le coach", "correct": true}]}, {"type": "flashcard", "front": "Rete (la)", "back": "la règle", "pronunciation": ""}, {"type": "flashcard", "front": "Goal (il)", "back": "le goal", "pronunciation": ""}, {"type": "flashcard", "front": "Punto (il)", "back": "le point", "pronunciation": ""}, {"type": "flashcard", "front": "Vittoria (la)", "back": "la victoire", "pronunciation": ""}, {"type": "flashcard", "front": "Sconfitta (la)", "back": "la défaite", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Rete (la)' ?", "options": [{"text": "le goal", "correct": false}, {"text": "la règle", "correct": true}]}, {"type": "flashcard", "front": "Pareggio (il)", "back": "l’égalité", "pronunciation": ""}, {"type": "flashcard", "front": "Cartellino giallo (il)", "back": "le carton jaune", "pronunciation": ""}, {"type": "flashcard", "front": "Tifosi (i)", "back": "les supporters", "pronunciation": ""}, {"type": "flashcard", "front": "Allenamento (l’)", "back": "l’entraînement", "pronunciation": ""}, {"type": "flashcard", "front": "Fisico (il)", "back": "le physique", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Pareggio (il)' ?", "options": [{"text": "le carton jaune", "correct": false}, {"text": "l’égalité", "correct": true}]}, {"type": "flashcard", "front": "Mentale (il)", "back": "le mental", "pronunciation": ""}, {"type": "flashcard", "front": "Tecnica (la)", "back": "la technique", "pronunciation": ""}, {"type": "flashcard", "front": "Forza (la)", "back": "la force", "pronunciation": ""}, {"type": "flashcard", "front": "Resistenza (la)", "back": "l’endurance", "pronunciation": ""}, {"type": "flashcard", "front": "Velocità (la)", "back": "la vitesse", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Mentale (il)' ?", "options": [{"text": "la technique", "correct": false}, {"text": "le mental", "correct": true}]}, {"type": "flashcard", "front": "Agilità (l’)", "back": "l’agilité", "pronunciation": ""}, {"type": "flashcard", "front": "Potenza (la)", "back": "la force", "pronunciation": ""}, {"type": "flashcard", "front": "Coordinazione (la)", "back": "la coordination", "pronunciation": ""}, {"type": "flashcard", "front": "Precisione", "back": "la précision", "pronunciation": ""}, {"type": "flashcard", "front": "Reattività", "back": "la réactivité", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Agilità (l’)' ?", "options": [{"text": "la force", "correct": false}, {"text": "l’agilité", "correct": true}]}, {"type": "flashcard", "front": "Regole (le)", "back": "les règles", "pronunciation": ""}, {"type": "flashcard", "front": "Record (il)", "back": "le record", "pronunciation": ""}, {"type": "flashcard", "front": "Medaglia (la)", "back": "la médaille", "pronunciation": ""}, {"type": "flashcard", "front": "Trofeo (il)", "back": "le trophée", "pronunciation": ""}, {"type": "flashcard", "front": "Campione (il)", "back": "le champion", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Regole (le)' ?", "options": [{"text": "le record", "correct": false}, {"text": "les règles", "correct": true}]}, {"type": "flashcard", "front": "Rivalità (la)", "back": "la revanche", "pronunciation": ""}, {"type": "flashcard", "front": "Fischio (il)", "back": "le sifflet", "pronunciation": ""}, {"type": "flashcard", "front": "Scalare", "back": "grimper", "pronunciation": ""}, {"type": "flashcard", "front": "Pedalare", "back": "pédaler", "pronunciation": ""}, {"type": "flashcard", "front": "Saltare", "back": "sauter", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Rivalità (la)' ?", "options": [{"text": "le sifflet", "correct": false}, {"text": "la revanche", "correct": true}]}, {"type": "flashcard", "front": "Lanciare", "back": "lancer", "pronunciation": ""}, {"type": "flashcard", "front": "Camminare", "back": "marcher", "pronunciation": ""}, {"type": "flashcard", "front": "Arrampicare", "back": "grimper", "pronunciation": ""}, {"type": "flashcard", "front": "Sciare", "back": "skier", "pronunciation": ""}, {"type": "flashcard", "front": "Pattinare", "back": "patiner", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Lanciare' ?", "options": [{"text": "marcher", "correct": false}, {"text": "lancer", "correct": true}]}, {"type": "flashcard", "front": "Nuotare", "back": "nager", "pronunciation": ""}, {"type": "flashcard", "front": "Esibirsi", "back": "se produire", "pronunciation": ""}, {"type": "flashcard", "front": "Allenarsi", "back": "s’entraîner", "pronunciation": ""}, {"type": "flashcard", "front": "Competere", "back": "concourrir", "pronunciation": ""}, {"type": "flashcard", "front": "Vincere", "back": "gagner", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Nuotare' ?", "options": [{"text": "se produire", "correct": false}, {"text": "nager", "correct": true}]}, {"type": "flashcard", "front": "Perdere", "back": "perdre", "pronunciation": ""}, {"type": "flashcard", "front": "Pareggiare", "back": "faire match nul", "pronunciation": ""}, {"type": "flashcard", "front": "Gareggiare", "back": "concourir", "pronunciation": ""}, {"type": "flashcard", "front": "Seguire", "back": "suivre", "pronunciation": ""}, {"type": "flashcard", "front": "Guardare", "back": "regarder", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Perdere' ?", "options": [{"text": "faire match nul", "correct": false}, {"text": "perdre", "correct": true}]}, {"type": "flashcard", "front": "Commentare", "back": "commenter", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Commentare' ?", "options": [{"text": "Rien", "correct": false}, {"text": "commenter", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en Lo Sport."}]
+      },
+{
+        id: 'theme_4',
+        title: 'Il Digitale',
+        desc: 'Vocabulaire: il digitale',
+        count: '60 mots',
+        progress: 0,
+        icon: Laptop,
+        locked: false,
+        slides: [{"type": "intro", "title": "Il Digitale", "content": "Découvrons ensemble le vocabulaire pour : Il Digitale"}, {"type": "flashcard", "front": "Digitale (il)", "back": "le digital", "pronunciation": ""}, {"type": "flashcard", "front": "Computer (il)", "back": "l’ordinateur", "pronunciation": ""}, {"type": "flashcard", "front": "Internet (l’)", "back": "l’internet", "pronunciation": ""}, {"type": "flashcard", "front": "Smartphone (lo)", "back": "le smartphone", "pronunciation": ""}, {"type": "flashcard", "front": "Tablet (il)", "back": "la tablette", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Digitale (il)' ?", "options": [{"text": "l’ordinateur", "correct": false}, {"text": "le digital", "correct": true}]}, {"type": "flashcard", "front": "Sito web (il)", "back": "le site internet", "pronunciation": ""}, {"type": "flashcard", "front": "Software (il)", "back": "le logiciel", "pronunciation": ""}, {"type": "flashcard", "front": "Hardware (l’)", "back": "le hardware", "pronunciation": ""}, {"type": "flashcard", "front": "App (l’)", "back": "l’application", "pronunciation": ""}, {"type": "flashcard", "front": "Social media (il)", "back": "les média sociaux", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Sito web (il)' ?", "options": [{"text": "le logiciel", "correct": false}, {"text": "le site internet", "correct": true}]}, {"type": "flashcard", "front": "Codice (il)", "back": "le mot de passe", "pronunciation": ""}, {"type": "flashcard", "front": "Virus (il)", "back": "le virus", "pronunciation": ""}, {"type": "flashcard", "front": "Sicurezza (la)", "back": "la sécurité", "pronunciation": ""}, {"type": "flashcard", "front": "Informatico (l’)", "back": "informatique", "pronunciation": ""}, {"type": "flashcard", "front": "Rete (la)", "back": "le réseau", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Codice (il)' ?", "options": [{"text": "le virus", "correct": false}, {"text": "le mot de passe", "correct": true}]}, {"type": "flashcard", "front": "Programma (il)", "back": "le programme", "pronunciation": ""}, {"type": "flashcard", "front": "Sistema (il)", "back": "le système", "pronunciation": ""}, {"type": "flashcard", "front": "Dispositivo (il)", "back": "le dispositif", "pronunciation": ""}, {"type": "flashcard", "front": "Tecnologia (la)", "back": "la technologie", "pronunciation": ""}, {"type": "flashcard", "front": "Dati (i)", "back": "les données", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Programma (il)' ?", "options": [{"text": "le système", "correct": false}, {"text": "le programme", "correct": true}]}, {"type": "flashcard", "front": "Blockchain (la)", "back": "le blockchain", "pronunciation": ""}, {"type": "flashcard", "front": "Streaming (lo)", "back": "le streaming", "pronunciation": ""}, {"type": "flashcard", "front": "Virtuale (il)", "back": "le virtuel", "pronunciation": ""}, {"type": "flashcard", "front": "Navigazione (la)", "back": "la navigation", "pronunciation": ""}, {"type": "flashcard", "front": "Ricerca (la)", "back": "la recherche", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Blockchain (la)' ?", "options": [{"text": "le streaming", "correct": false}, {"text": "le blockchain", "correct": true}]}, {"type": "flashcard", "front": "Robot (il)", "back": "le robot", "pronunciation": ""}, {"type": "flashcard", "front": "Chat (la)", "back": "le tchat", "pronunciation": ""}, {"type": "flashcard", "front": "Video (la)", "back": "la video", "pronunciation": ""}, {"type": "flashcard", "front": "Audio (l’)", "back": "l’audio", "pronunciation": ""}, {"type": "flashcard", "front": "Fotografia (la)", "back": "la photographie", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Robot (il)' ?", "options": [{"text": "le tchat", "correct": false}, {"text": "le robot", "correct": true}]}, {"type": "flashcard", "front": "Grafica (la)", "back": "le graphisme", "pronunciation": ""}, {"type": "flashcard", "front": "Animazione", "back": "(l’) animation", "pronunciation": ""}, {"type": "flashcard", "front": "Pagamento (il)", "back": "le paiement", "pronunciation": ""}, {"type": "flashcard", "front": "Criptovaluta (la)", "back": "la cryptomonnaie", "pronunciation": ""}, {"type": "flashcard", "front": "Big data (i )", "back": "le big data", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Grafica (la)' ?", "options": [{"text": "(l’) animation", "correct": false}, {"text": "le graphisme", "correct": true}]}, {"type": "flashcard", "front": "Algoritmo (l’)", "back": "l’algorithme", "pronunciation": ""}, {"type": "flashcard", "front": "Simulazione (la)", "back": "la simulation", "pronunciation": ""}, {"type": "flashcard", "front": "Robotica (la)", "back": "la robotique", "pronunciation": ""}, {"type": "flashcard", "front": "Sviluppo (lo)", "back": "le développement", "pronunciation": ""}, {"type": "flashcard", "front": "Codifica (la)", "back": "le codage", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Algoritmo (l’)' ?", "options": [{"text": "la simulation", "correct": false}, {"text": "l’algorithme", "correct": true}]}, {"type": "flashcard", "front": "Mail (la)", "back": "l’adresse mail", "pronunciation": ""}, {"type": "flashcard", "front": "Web design (il)", "back": "le web design", "pronunciation": ""}, {"type": "flashcard", "front": "Web marketing (il)", "back": "le web", "pronunciation": ""}, {"type": "flashcard", "front": "E-book (l’)", "back": "le livre numérique", "pronunciation": ""}, {"type": "flashcard", "front": "Sviluppare", "back": "développer", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Mail (la)' ?", "options": [{"text": "le web design", "correct": false}, {"text": "l’adresse mail", "correct": true}]}, {"type": "flashcard", "front": "Utilizzare", "back": "utiliser", "pronunciation": ""}, {"type": "flashcard", "front": "Accedere", "back": "accéder", "pronunciation": ""}, {"type": "flashcard", "front": "Scaricare", "back": "télécharger", "pronunciation": ""}, {"type": "flashcard", "front": "Inviare", "back": "envoyer", "pronunciation": ""}, {"type": "flashcard", "front": "Navigare", "back": "naviguer", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Utilizzare' ?", "options": [{"text": "accéder", "correct": false}, {"text": "utiliser", "correct": true}]}, {"type": "flashcard", "front": "Cercare", "back": "chercher", "pronunciation": ""}, {"type": "flashcard", "front": "Guardare", "back": "regarder", "pronunciation": ""}, {"type": "flashcard", "front": "Ascoltare", "back": "écouter", "pronunciation": ""}, {"type": "flashcard", "front": "Scattare", "back": "prendre", "pronunciation": ""}, {"type": "flashcard", "front": "Condividere", "back": "partager", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cercare' ?", "options": [{"text": "regarder", "correct": false}, {"text": "chercher", "correct": true}]}, {"type": "flashcard", "front": "Creare", "back": "créer", "pronunciation": ""}, {"type": "flashcard", "front": "Modificare", "back": "modifier", "pronunciation": ""}, {"type": "flashcard", "front": "Programmare", "back": "programmer", "pronunciation": ""}, {"type": "flashcard", "front": "Analizzare", "back": "analyser", "pronunciation": ""}, {"type": "flashcard", "front": "Simulare", "back": "simuler", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Creare' ?", "options": [{"text": "modifier", "correct": false}, {"text": "créer", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en Il Digitale."}]
+      },
+{
+        id: 'theme_5',
+        title: 'La Famiglia',
+        desc: 'Vocabulaire: la famiglia',
+        count: '52 mots',
+        progress: 0,
+        icon: Users,
+        locked: false,
+        slides: [{"type": "intro", "title": "La Famiglia", "content": "Découvrons ensemble le vocabulaire pour : La Famiglia"}, {"type": "flashcard", "front": "Famiglia (la)", "back": "la famille", "pronunciation": ""}, {"type": "flashcard", "front": "Genitori (i)", "back": "les parents", "pronunciation": ""}, {"type": "flashcard", "front": "Madre (la)/Mamma", "back": "la mère /", "pronunciation": ""}, {"type": "flashcard", "front": "Padre(il)/papà", "back": "le père/papa", "pronunciation": ""}, {"type": "flashcard", "front": "Figli (i)", "back": "les enfants", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Famiglia (la)' ?", "options": [{"text": "les parents", "correct": false}, {"text": "la famille", "correct": true}]}, {"type": "flashcard", "front": "Figlia (la)", "back": "la fille", "pronunciation": ""}, {"type": "flashcard", "front": "Figlio(il)", "back": "le fils", "pronunciation": ""}, {"type": "flashcard", "front": "Fratello(il)", "back": "le frère", "pronunciation": ""}, {"type": "flashcard", "front": "Sorella (la)", "back": "la soeur", "pronunciation": ""}, {"type": "flashcard", "front": "Nipote (il)", "back": "le petit-fils/neveu", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Figlia (la)' ?", "options": [{"text": "le fils", "correct": false}, {"text": "la fille", "correct": true}]}, {"type": "flashcard", "front": "Nipote (la)", "back": "la petite fille/nièce", "pronunciation": ""}, {"type": "flashcard", "front": "Zio (il)", "back": "l’oncle", "pronunciation": ""}, {"type": "flashcard", "front": "Zia (la)", "back": "la tante", "pronunciation": ""}, {"type": "flashcard", "front": "Nonno (il)", "back": "le grand-père", "pronunciation": ""}, {"type": "flashcard", "front": "Nonna (la)", "back": "la grand-mère", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Nipote (la)' ?", "options": [{"text": "l’oncle", "correct": false}, {"text": "la petite fille/nièce", "correct": true}]}, {"type": "flashcard", "front": "Bisnonno (il)", "back": "l’arrière grand-père", "pronunciation": ""}, {"type": "flashcard", "front": "Bisnonna (la)", "back": "l’arrière grand-mère", "pronunciation": ""}, {"type": "flashcard", "front": "Prozio (il)", "back": "le grand-oncle", "pronunciation": ""}, {"type": "flashcard", "front": "Prozia (la)", "back": "la grand-tante", "pronunciation": ""}, {"type": "flashcard", "front": "Cognato (il)", "back": "le beau-frère", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Bisnonno (il)' ?", "options": [{"text": "l’arrière grand-mère", "correct": false}, {"text": "l’arrière grand-père", "correct": true}]}, {"type": "flashcard", "front": "Cognata (la)", "back": "la belle-soeur", "pronunciation": ""}, {"type": "flashcard", "front": "Suocero (il)", "back": "le beau-père", "pronunciation": ""}, {"type": "flashcard", "front": "Suocera (la)", "back": "la belle-mère", "pronunciation": ""}, {"type": "flashcard", "front": "Genero (il)", "back": "le gendre", "pronunciation": ""}, {"type": "flashcard", "front": "Nuora (la)", "back": "la bru", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cognata (la)' ?", "options": [{"text": "le beau-père", "correct": false}, {"text": "la belle-soeur", "correct": true}]}, {"type": "flashcard", "front": "Padrino (il)", "back": "le parrain", "pronunciation": ""}, {"type": "flashcard", "front": "Madrina (la)", "back": "la marraine", "pronunciation": ""}, {"type": "flashcard", "front": "Cugino (il)", "back": "le cousin", "pronunciation": ""}, {"type": "flashcard", "front": "Cugina (la)", "back": "la cousine", "pronunciation": ""}, {"type": "flashcard", "front": "Parenti (i)", "back": "les parents proches", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Padrino (il)' ?", "options": [{"text": "la marraine", "correct": false}, {"text": "le parrain", "correct": true}]}, {"type": "flashcard", "front": "Fidanzato(il)", "back": "le petit ami", "pronunciation": ""}, {"type": "flashcard", "front": "Fidanzata (la)", "back": "la petite amie", "pronunciation": ""}, {"type": "flashcard", "front": "Marito (il)", "back": "le mari", "pronunciation": ""}, {"type": "flashcard", "front": "Moglie (la)", "back": "la femme", "pronunciation": ""}, {"type": "flashcard", "front": "Coniuge (il)", "back": "le conjoint", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Fidanzato(il)' ?", "options": [{"text": "la petite amie", "correct": false}, {"text": "le petit ami", "correct": true}]}, {"type": "flashcard", "front": "Compagno (il)", "back": "le compagnon", "pronunciation": ""}, {"type": "flashcard", "front": "Compagna (la)", "back": "la compagne", "pronunciation": ""}, {"type": "flashcard", "front": "Amico (l’)", "back": "l’ami", "pronunciation": ""}, {"type": "flashcard", "front": "Amica (l’)", "back": "l’amie", "pronunciation": ""}, {"type": "flashcard", "front": "Incontrare", "back": "rencontrer", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Compagno (il)' ?", "options": [{"text": "la compagne", "correct": false}, {"text": "le compagnon", "correct": true}]}, {"type": "flashcard", "front": "Sposare", "back": "épouser", "pronunciation": ""}, {"type": "flashcard", "front": "Divorziare", "back": "divorcer", "pronunciation": ""}, {"type": "flashcard", "front": "Nascere", "back": "naître", "pronunciation": ""}, {"type": "flashcard", "front": "Morire", "back": "mourir", "pronunciation": ""}, {"type": "flashcard", "front": "Crescere", "back": "grandir", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Sposare' ?", "options": [{"text": "divorcer", "correct": false}, {"text": "épouser", "correct": true}]}, {"type": "flashcard", "front": "Educare", "back": "éduquer", "pronunciation": ""}, {"type": "flashcard", "front": "Accudire", "back": "s’occuper", "pronunciation": ""}, {"type": "flashcard", "front": "Sostenere", "back": "soutenir", "pronunciation": ""}, {"type": "flashcard", "front": "Appoggiare", "back": "soutenir", "pronunciation": ""}, {"type": "flashcard", "front": "Proteggere", "back": "protéger", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Educare' ?", "options": [{"text": "s’occuper", "correct": false}, {"text": "éduquer", "correct": true}]}, {"type": "flashcard", "front": "Amare", "back": "aimer", "pronunciation": ""}, {"type": "flashcard", "front": "Rispettare", "back": "respecter", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Amare' ?", "options": [{"text": "respecter", "correct": false}, {"text": "aimer", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en La Famiglia."}]
+      },
+{
+        id: 'theme_6',
+        title: 'Gli Svaghi',
+        desc: 'Vocabulaire: gli svaghi',
+        count: '54 mots',
+        progress: 0,
+        icon: Gamepad2,
+        locked: false,
+        slides: [{"type": "intro", "title": "Gli Svaghi", "content": "Découvrons ensemble le vocabulaire pour : Gli Svaghi"}, {"type": "flashcard", "front": "Libro (il)", "back": "le livre", "pronunciation": ""}, {"type": "flashcard", "front": "Sport (lo)", "back": "le sport", "pronunciation": ""}, {"type": "flashcard", "front": "Cinema (il)", "back": "le cinéma", "pronunciation": ""}, {"type": "flashcard", "front": "Teatro (il)", "back": "le théâtre", "pronunciation": ""}, {"type": "flashcard", "front": "Musica (la)", "back": "la musique", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Libro (il)' ?", "options": [{"text": "le sport", "correct": false}, {"text": "le livre", "correct": true}]}, {"type": "flashcard", "front": "Libri (i)", "back": "les livres", "pronunciation": ""}, {"type": "flashcard", "front": "Pesca (la)", "back": "la pêche", "pronunciation": ""}, {"type": "flashcard", "front": "Giardinaggio (il)", "back": "le jardinage", "pronunciation": ""}, {"type": "flashcard", "front": "Cucina (la)", "back": "la cuisine", "pronunciation": ""}, {"type": "flashcard", "front": "Fotografia (la )", "back": "la photographie", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Libri (i)' ?", "options": [{"text": "la pêche", "correct": false}, {"text": "les livres", "correct": true}]}, {"type": "flashcard", "front": "Escursionismo (l’)", "back": "la randonnée", "pronunciation": ""}, {"type": "flashcard", "front": "Pittura (la)", "back": "la peinture", "pronunciation": ""}, {"type": "flashcard", "front": "Giuoco (il)", "back": "le jeu", "pronunciation": ""}, {"type": "flashcard", "front": "Danza (la)", "back": "la danse", "pronunciation": ""}, {"type": "flashcard", "front": "Yoga (lo)", "back": "le yoga", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Escursionismo (l’)' ?", "options": [{"text": "la peinture", "correct": false}, {"text": "la randonnée", "correct": true}]}, {"type": "flashcard", "front": "Meditazione (la)", "back": "la méditation", "pronunciation": ""}, {"type": "flashcard", "front": "Gita (la)", "back": "la sortie", "pronunciation": ""}, {"type": "flashcard", "front": "Amici (gli)", "back": "les amis", "pronunciation": ""}, {"type": "flashcard", "front": "Famiglia (la)", "back": "la famille", "pronunciation": ""}, {"type": "flashcard", "front": "Relax", "back": "la relaxation", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Meditazione (la)' ?", "options": [{"text": "la sortie", "correct": false}, {"text": "la méditation", "correct": true}]}, {"type": "flashcard", "front": "Hobby (gli)", "back": "les loisirs", "pronunciation": ""}, {"type": "flashcard", "front": "Ciclismo (il)", "back": "le cyclisme", "pronunciation": ""}, {"type": "flashcard", "front": "Escursioni (le)", "back": "les excursions", "pronunciation": ""}, {"type": "flashcard", "front": "Campeggio (il)", "back": "le camping", "pronunciation": ""}, {"type": "flashcard", "front": "Spiaggia (la)", "back": "la plage", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Hobby (gli)' ?", "options": [{"text": "le cyclisme", "correct": false}, {"text": "les loisirs", "correct": true}]}, {"type": "flashcard", "front": "Acquario (l’)", "back": "l’aquarium", "pronunciation": ""}, {"type": "flashcard", "front": "Parchi (i)", "back": "les parcs", "pronunciation": ""}, {"type": "flashcard", "front": "Museii (i)", "back": "les musées", "pronunciation": ""}, {"type": "flashcard", "front": "Pattinaggio (il)", "back": "le patinage", "pronunciation": ""}, {"type": "flashcard", "front": "Giochi d’acqua (i)", "back": "les jeux d’eau", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Acquario (l’)' ?", "options": [{"text": "les parcs", "correct": false}, {"text": "l’aquarium", "correct": true}]}, {"type": "flashcard", "front": "Lettura (la)", "back": "la lecture", "pronunciation": ""}, {"type": "flashcard", "front": "Natura (la)", "back": "la nature", "pronunciation": ""}, {"type": "flashcard", "front": "Arte (l’)", "back": "l’art", "pronunciation": ""}, {"type": "flashcard", "front": "Concerti (i)", "back": "les concerts", "pronunciation": ""}, {"type": "flashcard", "front": "Spettacoli (gli)", "back": "les spectacles", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Lettura (la)' ?", "options": [{"text": "la nature", "correct": false}, {"text": "la lecture", "correct": true}]}, {"type": "flashcard", "front": "Gite in barca", "back": "sorties en bateau", "pronunciation": ""}, {"type": "flashcard", "front": "Giochi di ruolo (i)", "back": "les jeux de rôle", "pronunciation": ""}, {"type": "flashcard", "front": "Spese (le)", "back": "le shopping", "pronunciation": ""}, {"type": "flashcard", "front": "Divertirsi", "back": "s’amuser", "pronunciation": ""}, {"type": "flashcard", "front": "Giocare", "back": "jouer", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Gite in barca' ?", "options": [{"text": "les jeux de rôle", "correct": false}, {"text": "sorties en bateau", "correct": true}]}, {"type": "flashcard", "front": "Viaggiare", "back": "voyager", "pronunciation": ""}, {"type": "flashcard", "front": "Leggere", "back": "lire", "pronunciation": ""}, {"type": "flashcard", "front": "Guardare", "back": "regarder", "pronunciation": ""}, {"type": "flashcard", "front": "Ascoltare", "back": "écouter", "pronunciation": ""}, {"type": "flashcard", "front": "Scrivere", "back": "écrire", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Viaggiare' ?", "options": [{"text": "lire", "correct": false}, {"text": "voyager", "correct": true}]}, {"type": "flashcard", "front": "Dipingere", "back": "peindre", "pronunciation": ""}, {"type": "flashcard", "front": "Cucinare", "back": "cuisiner", "pronunciation": ""}, {"type": "flashcard", "front": "Fotografare", "back": "photographier", "pronunciation": ""}, {"type": "flashcard", "front": "Ballare", "back": "danser", "pronunciation": ""}, {"type": "flashcard", "front": "Praticare", "back": "pratiquer", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Dipingere' ?", "options": [{"text": "cuisiner", "correct": false}, {"text": "peindre", "correct": true}]}, {"type": "flashcard", "front": "Nuotare", "back": "nager", "pronunciation": ""}, {"type": "flashcard", "front": "Andare al cinema", "back": "aller au cinéma", "pronunciation": ""}, {"type": "flashcard", "front": "Andare a teatro", "back": "aller au théâtre", "pronunciation": ""}, {"type": "flashcard", "front": "Andare al parco", "back": "aller au parc", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Nuotare' ?", "options": [{"text": "aller au cinéma", "correct": false}, {"text": "nager", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en Gli Svaghi."}]
+      },
+{
+        id: 'theme_7',
+        title: 'Il Viaggio',
+        desc: 'Vocabulaire: il viaggio',
+        count: '75 mots',
+        progress: 0,
+        icon: Train,
+        locked: false,
+        slides: [{"type": "intro", "title": "Il Viaggio", "content": "Découvrons ensemble le vocabulaire pour : Il Viaggio"}, {"type": "flashcard", "front": "Treno (il)", "back": "le train", "pronunciation": ""}, {"type": "flashcard", "front": "Aereo (l’)", "back": "l’avion", "pronunciation": ""}, {"type": "flashcard", "front": "Autobus (l’)", "back": "le bus", "pronunciation": ""}, {"type": "flashcard", "front": "Pullman (il)", "back": "le car", "pronunciation": ""}, {"type": "flashcard", "front": "Barca (la)", "back": "le bateau", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Treno (il)' ?", "options": [{"text": "l’avion", "correct": false}, {"text": "le train", "correct": true}]}, {"type": "flashcard", "front": "Nave (la)", "back": "le navire (bateau de", "pronunciation": ""}, {"type": "flashcard", "front": "Traghetto (il)", "back": "le ferry", "pronunciation": ""}, {"type": "flashcard", "front": "Taxi (il)", "back": "le taxi", "pronunciation": ""}, {"type": "flashcard", "front": "Metropolitana (la)", "back": "le métro", "pronunciation": ""}, {"type": "flashcard", "front": "Aeroporto (l’)", "back": "l’aéroport", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Nave (la)' ?", "options": [{"text": "le ferry", "correct": false}, {"text": "le navire (bateau de", "correct": true}]}, {"type": "flashcard", "front": "Stazione (la)", "back": "la gare", "pronunciation": ""}, {"type": "flashcard", "front": "Parcheggio (il)", "back": "le parking", "pronunciation": ""}, {"type": "flashcard", "front": "Viaggio (il)", "back": "le voyage", "pronunciation": ""}, {"type": "flashcard", "front": "Viaggiatore (il)", "back": "le voyageur", "pronunciation": ""}, {"type": "flashcard", "front": "Itinerario (l’)", "back": "l’itinéraire", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Stazione (la)' ?", "options": [{"text": "le parking", "correct": false}, {"text": "la gare", "correct": true}]}, {"type": "flashcard", "front": "Biglietto (il)", "back": "le ticket", "pronunciation": ""}, {"type": "flashcard", "front": "Pacchetto (il)", "back": "le paquet", "pronunciation": ""}, {"type": "flashcard", "front": "Prenotazione (la)", "back": "la réservation", "pronunciation": ""}, {"type": "flashcard", "front": "Valigia (la)", "back": "la valise", "pronunciation": ""}, {"type": "flashcard", "front": "Zaino (lo)", "back": "le sac à dos", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Biglietto (il)' ?", "options": [{"text": "le paquet", "correct": false}, {"text": "le ticket", "correct": true}]}, {"type": "flashcard", "front": "Cuffiette (le)", "back": "les écouteurs", "pronunciation": ""}, {"type": "flashcard", "front": "Passaporto (il)", "back": "le passeport", "pronunciation": ""}, {"type": "flashcard", "front": "Visto (il)", "back": "le visa", "pronunciation": ""}, {"type": "flashcard", "front": "Assicurazione (l’)", "back": "l’assurance", "pronunciation": ""}, {"type": "flashcard", "front": "Guida (la)", "back": "le guide", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cuffiette (le)' ?", "options": [{"text": "le passeport", "correct": false}, {"text": "les écouteurs", "correct": true}]}, {"type": "flashcard", "front": "Escursioni (l’)", "back": "les excursions", "pronunciation": ""}, {"type": "flashcard", "front": "Noleggio (il)", "back": "la location", "pronunciation": ""}, {"type": "flashcard", "front": "Autostrada (l’)", "back": "l’autoroute", "pronunciation": ""}, {"type": "flashcard", "front": "Strada (la)", "back": "la route", "pronunciation": ""}, {"type": "flashcard", "front": "Incrocio (l’)", "back": "l’intersection", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Escursioni (l’)' ?", "options": [{"text": "la location", "correct": false}, {"text": "les excursions", "correct": true}]}, {"type": "flashcard", "front": "Cartina (la)", "back": "la carte", "pronunciation": ""}, {"type": "flashcard", "front": "Indicazioni (le)", "back": "les directions", "pronunciation": ""}, {"type": "flashcard", "front": "Destinazione (la)", "back": "la destination", "pronunciation": ""}, {"type": "flashcard", "front": "Partenza (la)", "back": "le départ", "pronunciation": ""}, {"type": "flashcard", "front": "Arrivo (l’)", "back": "l’arrivée", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cartina (la)' ?", "options": [{"text": "les directions", "correct": false}, {"text": "la carte", "correct": true}]}, {"type": "flashcard", "front": "Trasporto (il)", "back": "le transport", "pronunciation": ""}, {"type": "flashcard", "front": "Comodo", "back": "pratique", "pronunciation": ""}, {"type": "flashcard", "front": "Vuoto", "back": "vide", "pronunciation": ""}, {"type": "flashcard", "front": "Occupato", "back": "occupé", "pronunciation": ""}, {"type": "flashcard", "front": "Libero", "back": "libre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Trasporto (il)' ?", "options": [{"text": "pratique", "correct": false}, {"text": "le transport", "correct": true}]}, {"type": "flashcard", "front": "Ritardo (il)", "back": "le retard", "pronunciation": ""}, {"type": "flashcard", "front": "Cancellazione (la)", "back": "l’annulation", "pronunciation": ""}, {"type": "flashcard", "front": "Rimborso (il)", "back": "le remboursement", "pronunciation": ""}, {"type": "flashcard", "front": "Bagaglio (il)", "back": "le bagage", "pronunciation": ""}, {"type": "flashcard", "front": "Percorso (il)", "back": "le parcours", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Ritardo (il)' ?", "options": [{"text": "l’annulation", "correct": false}, {"text": "le retard", "correct": true}]}, {"type": "flashcard", "front": "vacanze (le)", "back": "les vacances", "pronunciation": ""}, {"type": "flashcard", "front": "mare (il)", "back": "la mer", "pronunciation": ""}, {"type": "flashcard", "front": "sole (il)", "back": "le soleil", "pronunciation": ""}, {"type": "flashcard", "front": "Spiaggia (la)", "back": "la plage", "pronunciation": ""}, {"type": "flashcard", "front": "Albergo (l’)", "back": "l’hotel", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'vacanze (le)' ?", "options": [{"text": "la mer", "correct": false}, {"text": "les vacances", "correct": true}]}, {"type": "flashcard", "front": "Montagna (la)", "back": "la montagne", "pronunciation": ""}, {"type": "flashcard", "front": "Lago (il)", "back": "le lac", "pronunciation": ""}, {"type": "flashcard", "front": "Divertimento (il)", "back": "le divertissement", "pronunciation": ""}, {"type": "flashcard", "front": "Estate (l’)", "back": "l’été", "pronunciation": ""}, {"type": "flashcard", "front": "Inverno (l’)", "back": "l’hiver", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Montagna (la)' ?", "options": [{"text": "le lac", "correct": false}, {"text": "la montagne", "correct": true}]}, {"type": "flashcard", "front": "Turismo (il)", "back": "le tourisme", "pronunciation": ""}, {"type": "flashcard", "front": "Turisti (i)", "back": "les touristes", "pronunciation": ""}, {"type": "flashcard", "front": "Viaggiare", "back": "voyager", "pronunciation": ""}, {"type": "flashcard", "front": "Partire", "back": "partir", "pronunciation": ""}, {"type": "flashcard", "front": "Arrivare", "back": "arriver", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Turismo (il)' ?", "options": [{"text": "les touristes", "correct": false}, {"text": "le tourisme", "correct": true}]}, {"type": "flashcard", "front": "Andare", "back": "aller", "pronunciation": ""}, {"type": "flashcard", "front": "Ritornare", "back": "revenir", "pronunciation": ""}, {"type": "flashcard", "front": "Visitare", "back": "visiter", "pronunciation": ""}, {"type": "flashcard", "front": "Esplorare", "back": "explorer", "pronunciation": ""}, {"type": "flashcard", "front": "Soggiornare", "back": "séjourner", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Andare' ?", "options": [{"text": "revenir", "correct": false}, {"text": "aller", "correct": true}]}, {"type": "flashcard", "front": "Prenotare", "back": "réserver", "pronunciation": ""}, {"type": "flashcard", "front": "Noleggiare", "back": "louer", "pronunciation": ""}, {"type": "flashcard", "front": "Includere", "back": "inclure", "pronunciation": ""}, {"type": "flashcard", "front": "Divertirsi", "back": "se divertir", "pronunciation": ""}, {"type": "flashcard", "front": "Camminare", "back": "marcher", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Prenotare' ?", "options": [{"text": "louer", "correct": false}, {"text": "réserver", "correct": true}]}, {"type": "flashcard", "front": "Guidare", "back": "conduire", "pronunciation": ""}, {"type": "flashcard", "front": "Volare", "back": "voler", "pronunciation": ""}, {"type": "flashcard", "front": "Navigare", "back": "naviguer", "pronunciation": ""}, {"type": "flashcard", "front": "Conoscere", "back": "connaître", "pronunciation": ""}, {"type": "flashcard", "front": "Scoprire", "back": "découvrir", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Guidare' ?", "options": [{"text": "voler", "correct": false}, {"text": "conduire", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en Il Viaggio."}]
+      },
+{
+        id: 'theme_8',
+        title: 'L’Ufficio',
+        desc: 'Vocabulaire: l’ufficio',
+        count: '63 mots',
+        progress: 0,
+        icon: Briefcase,
+        locked: false,
+        slides: [{"type": "intro", "title": "L’Ufficio", "content": "Découvrons ensemble le vocabulaire pour : L’Ufficio"}, {"type": "flashcard", "front": "Ufficio (l’)", "back": "le bureau", "pronunciation": ""}, {"type": "flashcard", "front": "Computer (il)", "back": "l’ordinateur", "pronunciation": ""}, {"type": "flashcard", "front": "Sedia (la)", "back": "la chaise", "pronunciation": ""}, {"type": "flashcard", "front": "Scrivania (la)", "back": "le bureau", "pronunciation": ""}, {"type": "flashcard", "front": "Tastiera (la)", "back": "le clavier", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Ufficio (l’)' ?", "options": [{"text": "l’ordinateur", "correct": false}, {"text": "le bureau", "correct": true}]}, {"type": "flashcard", "front": "Mouse (il)", "back": "la souris", "pronunciation": ""}, {"type": "flashcard", "front": "Stampante (la)", "back": "l’imprimante", "pronunciation": ""}, {"type": "flashcard", "front": "Fax (il)", "back": "le Fax", "pronunciation": ""}, {"type": "flashcard", "front": "Telefono (il)", "back": "le téléphone", "pronunciation": ""}, {"type": "flashcard", "front": "Documento (il)", "back": "le document", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Mouse (il)' ?", "options": [{"text": "l’imprimante", "correct": false}, {"text": "la souris", "correct": true}]}, {"type": "flashcard", "front": "Carta (la)", "back": "le papier", "pronunciation": ""}, {"type": "flashcard", "front": "Penna (la)", "back": "le Stylo", "pronunciation": ""}, {"type": "flashcard", "front": "Matita (la)", "back": "le Crayon", "pronunciation": ""}, {"type": "flashcard", "front": "Gomma (la)", "back": "la gomme", "pronunciation": ""}, {"type": "flashcard", "front": "Foglio (il)", "back": "la feuille", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Carta (la)' ?", "options": [{"text": "le Stylo", "correct": false}, {"text": "le papier", "correct": true}]}, {"type": "flashcard", "front": "Agenda (l’)", "back": "l’agenda", "pronunciation": ""}, {"type": "flashcard", "front": "Calcolatrice (la)", "back": "la calculatrice", "pronunciation": ""}, {"type": "flashcard", "front": "Lavoro (il)", "back": "le travail", "pronunciation": ""}, {"type": "flashcard", "front": "Orario (l’)", "back": "l’horaires", "pronunciation": ""}, {"type": "flashcard", "front": "Capo (il)", "back": "le chef", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Agenda (l’)' ?", "options": [{"text": "la calculatrice", "correct": false}, {"text": "l’agenda", "correct": true}]}, {"type": "flashcard", "front": "Collaboratore (il)", "back": "le collaborateur", "pronunciation": ""}, {"type": "flashcard", "front": "Collega (il)", "back": "le collègue", "pronunciation": ""}, {"type": "flashcard", "front": "Incarico (l’)", "back": "la tâche", "pronunciation": ""}, {"type": "flashcard", "front": "Progetto (il)", "back": "le Projet", "pronunciation": ""}, {"type": "flashcard", "front": "Riunione (la)", "back": "la réunion", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Collaboratore (il)' ?", "options": [{"text": "le collègue", "correct": false}, {"text": "le collaborateur", "correct": true}]}, {"type": "flashcard", "front": "Scadenza (la)", "back": "la date limite", "pronunciation": ""}, {"type": "flashcard", "front": "Obiettivo (l’)", "back": "l’objectif", "pronunciation": ""}, {"type": "flashcard", "front": "Responsabile (il)", "back": "le Responsable", "pronunciation": ""}, {"type": "flashcard", "front": "Risultato (il)", "back": "le résultat", "pronunciation": ""}, {"type": "flashcard", "front": "Stipendio (lo)", "back": "le salaire", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Scadenza (la)' ?", "options": [{"text": "l’objectif", "correct": false}, {"text": "la date limite", "correct": true}]}, {"type": "flashcard", "front": "Contratto (il)", "back": "le contrat", "pronunciation": ""}, {"type": "flashcard", "front": "Ferie (le)", "back": "les vacances", "pronunciation": ""}, {"type": "flashcard", "front": "Malattia (la)", "back": "la maladie", "pronunciation": ""}, {"type": "flashcard", "front": "Pausa (la)", "back": "la pause", "pronunciation": ""}, {"type": "flashcard", "front": "Pensione (la)", "back": "la retraite", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Contratto (il)' ?", "options": [{"text": "les vacances", "correct": false}, {"text": "le contrat", "correct": true}]}, {"type": "flashcard", "front": "Licenziamento (il)", "back": "le licenciement", "pronunciation": ""}, {"type": "flashcard", "front": "Assenteismo (l’)", "back": "l’absentéisme", "pronunciation": ""}, {"type": "flashcard", "front": "Formazione (la)", "back": "la formation", "pronunciation": ""}, {"type": "flashcard", "front": "Sviluppo (lo)", "back": "le développement", "pronunciation": ""}, {"type": "flashcard", "front": "Carriera (la)", "back": "la carrière", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Licenziamento (il)' ?", "options": [{"text": "l’absentéisme", "correct": false}, {"text": "le licenciement", "correct": true}]}, {"type": "flashcard", "front": "Promozione (la)", "back": "la promotion", "pronunciation": ""}, {"type": "flashcard", "front": "Soddisfazione (la)", "back": "la satisfaction", "pronunciation": ""}, {"type": "flashcard", "front": "Incontrare", "back": "rencontrer", "pronunciation": ""}, {"type": "flashcard", "front": "Lavorare", "back": "travailler", "pronunciation": ""}, {"type": "flashcard", "front": "Discutere", "back": "discuter", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Promozione (la)' ?", "options": [{"text": "la satisfaction", "correct": false}, {"text": "la promotion", "correct": true}]}, {"type": "flashcard", "front": "Collaborare", "back": "collaborer", "pronunciation": ""}, {"type": "flashcard", "front": "Organizzare", "back": "organiser", "pronunciation": ""}, {"type": "flashcard", "front": "Risolvere", "back": "résoudre", "pronunciation": ""}, {"type": "flashcard", "front": "Presentare", "back": "présenter", "pronunciation": ""}, {"type": "flashcard", "front": "Comunicare", "back": "communiquer", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Collaborare' ?", "options": [{"text": "organiser", "correct": false}, {"text": "collaborer", "correct": true}]}, {"type": "flashcard", "front": "Negoziare", "back": "négocier", "pronunciation": ""}, {"type": "flashcard", "front": "Gestire", "back": "gérer", "pronunciation": ""}, {"type": "flashcard", "front": "Pianificare", "back": "planifier", "pronunciation": ""}, {"type": "flashcard", "front": "Sviluppare", "back": "développer", "pronunciation": ""}, {"type": "flashcard", "front": "Formare", "back": "former", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Negoziare' ?", "options": [{"text": "gérer", "correct": false}, {"text": "négocier", "correct": true}]}, {"type": "flashcard", "front": "Report", "back": "rapporter", "pronunciation": ""}, {"type": "flashcard", "front": "Monitorare", "back": "surveiller", "pronunciation": ""}, {"type": "flashcard", "front": "Evaluare", "back": "évaluer", "pronunciation": ""}, {"type": "flashcard", "front": "Coordinare", "back": "coordonner", "pronunciation": ""}, {"type": "flashcard", "front": "Innovare", "back": "innover", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Report' ?", "options": [{"text": "surveiller", "correct": false}, {"text": "rapporter", "correct": true}]}, {"type": "flashcard", "front": "Ridurre", "back": "réduire", "pronunciation": ""}, {"type": "flashcard", "front": "Incrementare", "back": "augmenter", "pronunciation": ""}, {"type": "flashcard", "front": "Raggiungere", "back": "atteindre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Ridurre' ?", "options": [{"text": "augmenter", "correct": false}, {"text": "réduire", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en L’Ufficio."}]
+      },
+{
+        id: 'theme_9',
+        title: 'La Cucina',
+        desc: 'Vocabulaire: la cucina',
+        count: '79 mots',
+        progress: 0,
+        icon: Utensils,
+        locked: false,
+        slides: [{"type": "intro", "title": "La Cucina", "content": "Découvrons ensemble le vocabulaire pour : La Cucina"}, {"type": "flashcard", "front": "Cucina (la)", "back": "la cuisine", "pronunciation": ""}, {"type": "flashcard", "front": "Cuoco (il)", "back": "le cuisinier", "pronunciation": ""}, {"type": "flashcard", "front": "Forno (il)", "back": "le four", "pronunciation": ""}, {"type": "flashcard", "front": "Frigorifero (il)", "back": "le réfrigérateur", "pronunciation": ""}, {"type": "flashcard", "front": "Padella (la)", "back": "la poêle", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Cucina (la)' ?", "options": [{"text": "le cuisinier", "correct": false}, {"text": "la cuisine", "correct": true}]}, {"type": "flashcard", "front": "Pentola (la)", "back": "la casserole", "pronunciation": ""}, {"type": "flashcard", "front": "Pentola a pressione (la)", "back": "l’autocuiseur", "pronunciation": ""}, {"type": "flashcard", "front": "Coltello (il)", "back": "le couteau", "pronunciation": ""}, {"type": "flashcard", "front": "Forchetta (la)", "back": "la forchetta", "pronunciation": ""}, {"type": "flashcard", "front": "Cucchiaio (il)", "back": "la cuillère", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Pentola (la)' ?", "options": [{"text": "l’autocuiseur", "correct": false}, {"text": "la casserole", "correct": true}]}, {"type": "flashcard", "front": "Tovaglia (la)", "back": "la nappe", "pronunciation": ""}, {"type": "flashcard", "front": "Tovogliolo (il)", "back": "la serviette", "pronunciation": ""}, {"type": "flashcard", "front": "Piatto (il)", "back": "l’assiette", "pronunciation": ""}, {"type": "flashcard", "front": "Piattino (il)", "back": "la petite assiette", "pronunciation": ""}, {"type": "flashcard", "front": "Tazza (la)", "back": "la tasse", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Tovaglia (la)' ?", "options": [{"text": "la serviette", "correct": false}, {"text": "la nappe", "correct": true}]}, {"type": "flashcard", "front": "Tazzina (la)", "back": "la petite tasse", "pronunciation": ""}, {"type": "flashcard", "front": "Scodella (lo)", "back": "le bol", "pronunciation": ""}, {"type": "flashcard", "front": "Bicchiere (il)", "back": "le verre", "pronunciation": ""}, {"type": "flashcard", "front": "Posate (le)", "back": "les couverts", "pronunciation": ""}, {"type": "flashcard", "front": "Caffè (il)", "back": "le café", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Tazzina (la)' ?", "options": [{"text": "le bol", "correct": false}, {"text": "la petite tasse", "correct": true}]}, {"type": "flashcard", "front": "Tè (il)", "back": "le thé", "pronunciation": ""}, {"type": "flashcard", "front": "Latte (il)", "back": "le lait", "pronunciation": ""}, {"type": "flashcard", "front": "Acqua (l’)", "back": "l’eau", "pronunciation": ""}, {"type": "flashcard", "front": "Vino (il)", "back": "le vin", "pronunciation": ""}, {"type": "flashcard", "front": "Birra (la)", "back": "la bière", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Tè (il)' ?", "options": [{"text": "le lait", "correct": false}, {"text": "le thé", "correct": true}]}, {"type": "flashcard", "front": "Sale (il)", "back": "le sel", "pronunciation": ""}, {"type": "flashcard", "front": "Pepe (il)", "back": "le poivre", "pronunciation": ""}, {"type": "flashcard", "front": "Zucchero (lo)", "back": "le sucre", "pronunciation": ""}, {"type": "flashcard", "front": "Olio (l’)", "back": "l’huile", "pronunciation": ""}, {"type": "flashcard", "front": "Aceto (l’)", "back": "le vinaigre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Sale (il)' ?", "options": [{"text": "le poivre", "correct": false}, {"text": "le sel", "correct": true}]}, {"type": "flashcard", "front": "Aglio (l’)", "back": "l’ail", "pronunciation": ""}, {"type": "flashcard", "front": "Cipolla (la)", "back": "l’oignon", "pronunciation": ""}, {"type": "flashcard", "front": "Pomodori (i)", "back": "les tomates", "pronunciation": ""}, {"type": "flashcard", "front": "Patate (le)", "back": "les pommes de terre", "pronunciation": ""}, {"type": "flashcard", "front": "Carote (le)", "back": "les carottes", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Aglio (l’)' ?", "options": [{"text": "l’oignon", "correct": false}, {"text": "l’ail", "correct": true}]}, {"type": "flashcard", "front": "Insalata (l’)", "back": "la salade", "pronunciation": ""}, {"type": "flashcard", "front": "Zucchine (lo)", "back": "les courgettes", "pronunciation": ""}, {"type": "flashcard", "front": "Melanzane (le)", "back": "les aubergines", "pronunciation": ""}, {"type": "flashcard", "front": "Peperone (le)", "back": "les poivrons", "pronunciation": ""}, {"type": "flashcard", "front": "Funghi (i)", "back": "les champignons", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Insalata (l’)' ?", "options": [{"text": "les courgettes", "correct": false}, {"text": "la salade", "correct": true}]}, {"type": "flashcard", "front": "Basilico (il)", "back": "le basilique", "pronunciation": ""}, {"type": "flashcard", "front": "Rosmarino (il)", "back": "le romarain", "pronunciation": ""}, {"type": "flashcard", "front": "Timo (il)", "back": "le thym", "pronunciation": ""}, {"type": "flashcard", "front": "Prezzemolo (il)", "back": "le persil", "pronunciation": ""}, {"type": "flashcard", "front": "Spezie (le)", "back": "les épices", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Basilico (il)' ?", "options": [{"text": "le romarain", "correct": false}, {"text": "le basilique", "correct": true}]}, {"type": "flashcard", "front": "Curry (il)", "back": "le curry", "pronunciation": ""}, {"type": "flashcard", "front": "Zenzero (lo)", "back": "le gingembre", "pronunciation": ""}, {"type": "flashcard", "front": "Riso (il)", "back": "il riso", "pronunciation": ""}, {"type": "flashcard", "front": "Pasta (la)", "back": "les pâtes", "pronunciation": ""}, {"type": "flashcard", "front": "Fagiolini (i)", "back": "les haricots verts", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Curry (il)' ?", "options": [{"text": "le gingembre", "correct": false}, {"text": "le curry", "correct": true}]}, {"type": "flashcard", "front": "Lenticchie (le)", "back": "les lentilles", "pronunciation": ""}, {"type": "flashcard", "front": "Pollo (il)", "back": "le poulet", "pronunciation": ""}, {"type": "flashcard", "front": "Maiale (il)", "back": "le porc", "pronunciation": ""}, {"type": "flashcard", "front": "Manzo (il)", "back": "le boeuf", "pronunciation": ""}, {"type": "flashcard", "front": "Vitello (il)", "back": "le veau", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Lenticchie (le)' ?", "options": [{"text": "le poulet", "correct": false}, {"text": "les lentilles", "correct": true}]}, {"type": "flashcard", "front": "Carne (la)", "back": "la viande", "pronunciation": ""}, {"type": "flashcard", "front": "Pesce (il)", "back": "le poisson", "pronunciation": ""}, {"type": "flashcard", "front": "Olive (le)", "back": "les olives", "pronunciation": ""}, {"type": "flashcard", "front": "Formaggio (il)", "back": "le fromage", "pronunciation": ""}, {"type": "flashcard", "front": "Burro (il)", "back": "le beurre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Carne (la)' ?", "options": [{"text": "le poisson", "correct": false}, {"text": "la viande", "correct": true}]}, {"type": "flashcard", "front": "Uova (le)", "back": "les oeufs", "pronunciation": ""}, {"type": "flashcard", "front": "Stuzzichini (i)", "back": "les petits fours", "pronunciation": ""}, {"type": "flashcard", "front": "Patatine (le)", "back": "les chips", "pronunciation": ""}, {"type": "flashcard", "front": "Bruschetta (la)", "back": "la bruschetta", "pronunciation": ""}, {"type": "flashcard", "front": "Panna (la)", "back": "la crème", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Uova (le)' ?", "options": [{"text": "les petits fours", "correct": false}, {"text": "les oeufs", "correct": true}]}, {"type": "flashcard", "front": "Parmigiano (il)", "back": "le parmesan", "pronunciation": ""}, {"type": "flashcard", "front": "Dolce (il)", "back": "le dessert", "pronunciation": ""}, {"type": "flashcard", "front": "Gelato (il)", "back": "la glace", "pronunciation": ""}, {"type": "flashcard", "front": "Cuocere", "back": "cuisiner", "pronunciation": ""}, {"type": "flashcard", "front": "Grigliare", "back": "griller", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Parmigiano (il)' ?", "options": [{"text": "le dessert", "correct": false}, {"text": "le parmesan", "correct": true}]}, {"type": "flashcard", "front": "Arrostire", "back": "rôtir", "pronunciation": ""}, {"type": "flashcard", "front": "Tagliare", "back": "couper", "pronunciation": ""}, {"type": "flashcard", "front": "Tritare", "back": "hacher", "pronunciation": ""}, {"type": "flashcard", "front": "Affettare", "back": "trancher", "pronunciation": ""}, {"type": "flashcard", "front": "Mescolare", "back": "mélanger", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Arrostire' ?", "options": [{"text": "couper", "correct": false}, {"text": "rôtir", "correct": true}]}, {"type": "flashcard", "front": "Aggiungere", "back": "ajouter", "pronunciation": ""}, {"type": "flashcard", "front": "Preparare", "back": "préparer", "pronunciation": ""}, {"type": "flashcard", "front": "Condire", "back": "assaisonner", "pronunciation": ""}, {"type": "flashcard", "front": "Invitare", "back": "recevoir (des invités)", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Aggiungere' ?", "options": [{"text": "préparer", "correct": false}, {"text": "ajouter", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en La Cucina."}]
+      },
+{
+        id: 'theme_10',
+        title: 'La Scuola',
+        desc: 'Vocabulaire: la scuola',
+        count: '65 mots',
+        progress: 0,
+        icon: GraduationCap,
+        locked: false,
+        slides: [{"type": "intro", "title": "La Scuola", "content": "Découvrons ensemble le vocabulaire pour : La Scuola"}, {"type": "flashcard", "front": "Scuola (la)", "back": "l’école", "pronunciation": ""}, {"type": "flashcard", "front": "Istruzione (l’)", "back": "l’éducation", "pronunciation": ""}, {"type": "flashcard", "front": "Scolarizzazione (la)", "back": "la scolarité", "pronunciation": ""}, {"type": "flashcard", "front": "Insegnante (l’)", "back": "l’enseignant", "pronunciation": ""}, {"type": "flashcard", "front": "Studente (lo)", "back": "l’élève", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Scuola (la)' ?", "options": [{"text": "l’éducation", "correct": false}, {"text": "l’école", "correct": true}]}, {"type": "flashcard", "front": "Lezione (la)", "back": "la leçon", "pronunciation": ""}, {"type": "flashcard", "front": "Materia (la)", "back": "la matière", "pronunciation": ""}, {"type": "flashcard", "front": "Classe (la)", "back": "la classe", "pronunciation": ""}, {"type": "flashcard", "front": "Biblioteca (la)", "back": "la bibliothèque", "pronunciation": ""}, {"type": "flashcard", "front": "Libro (il)", "back": "le livre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Lezione (la)' ?", "options": [{"text": "la matière", "correct": false}, {"text": "la leçon", "correct": true}]}, {"type": "flashcard", "front": "Manuale (il)", "back": "le manuel", "pronunciation": ""}, {"type": "flashcard", "front": "Compiti (i)", "back": "le devoir", "pronunciation": ""}, {"type": "flashcard", "front": "Esame (l’)", "back": "l’examen", "pronunciation": ""}, {"type": "flashcard", "front": "Voto (il)", "back": "la note", "pronunciation": ""}, {"type": "flashcard", "front": "Pagella (la)", "back": "le bulletin", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Manuale (il)' ?", "options": [{"text": "le devoir", "correct": false}, {"text": "le manuel", "correct": true}]}, {"type": "flashcard", "front": "Diploma (il)", "back": "le diplôme", "pronunciation": ""}, {"type": "flashcard", "front": "Università (l’)", "back": "l’université", "pronunciation": ""}, {"type": "flashcard", "front": "Laurea (la)", "back": "la licence", "pronunciation": ""}, {"type": "flashcard", "front": "Laurea magistrale (la)", "back": "la maîtrise", "pronunciation": ""}, {"type": "flashcard", "front": "Dottorato (il)", "back": "le doctorat", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Diploma (il)' ?", "options": [{"text": "l’université", "correct": false}, {"text": "le diplôme", "correct": true}]}, {"type": "flashcard", "front": "Ricerca (la)", "back": "la recherche", "pronunciation": ""}, {"type": "flashcard", "front": "Tesi (la)", "back": "la thèse", "pronunciation": ""}, {"type": "flashcard", "front": "Corso (il)", "back": "le cours", "pronunciation": ""}, {"type": "flashcard", "front": "Teoria (la)", "back": "la théorie", "pronunciation": ""}, {"type": "flashcard", "front": "Pratica (la)", "back": "la pratique", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Ricerca (la)' ?", "options": [{"text": "la thèse", "correct": false}, {"text": "la recherche", "correct": true}]}, {"type": "flashcard", "front": "Progetto (il)", "back": "le projet", "pronunciation": ""}, {"type": "flashcard", "front": "Partecipazione (la)", "back": "la participation", "pronunciation": ""}, {"type": "flashcard", "front": "Presentazione (la)", "back": "la présentation", "pronunciation": ""}, {"type": "flashcard", "front": "Dibattito (il)", "back": "le débat", "pronunciation": ""}, {"type": "flashcard", "front": "Discussione (la)", "back": "la discussion", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Progetto (il)' ?", "options": [{"text": "la participation", "correct": false}, {"text": "le projet", "correct": true}]}, {"type": "flashcard", "front": "Creatività (la)", "back": "la créativité", "pronunciation": ""}, {"type": "flashcard", "front": "Perseveranza (la)", "back": "la persévérance", "pronunciation": ""}, {"type": "flashcard", "front": "Motivazione (la)", "back": "la motivation", "pronunciation": ""}, {"type": "flashcard", "front": "Curiosità (la)", "back": "la curiosité", "pronunciation": ""}, {"type": "flashcard", "front": "Etica (l’)", "back": "l’éthique", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Creatività (la)' ?", "options": [{"text": "la persévérance", "correct": false}, {"text": "la créativité", "correct": true}]}, {"type": "flashcard", "front": "Responsabilità (la)", "back": "la", "pronunciation": ""}, {"type": "flashcard", "front": "Cittadinanza (la)", "back": "la citoyenneté", "pronunciation": ""}, {"type": "flashcard", "front": "Tolleranza (la)", "back": "la tolérance", "pronunciation": ""}, {"type": "flashcard", "front": "Diversità (la)", "back": "la diversité", "pronunciation": ""}, {"type": "flashcard", "front": "Pedagogia (la)", "back": "la pédagogie", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Responsabilità (la)' ?", "options": [{"text": "la citoyenneté", "correct": false}, {"text": "la", "correct": true}]}, {"type": "flashcard", "front": "Didattica (la)", "back": "la didactique", "pronunciation": ""}, {"type": "flashcard", "front": "Metodologia (la)", "back": "la méthodologie", "pronunciation": ""}, {"type": "flashcard", "front": "Orientamento (l’)", "back": "l’orientation", "pronunciation": ""}, {"type": "flashcard", "front": "Formazione (la)", "back": "la formation", "pronunciation": ""}, {"type": "flashcard", "front": "Certificazione (la)", "back": "la certification", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Didattica (la)' ?", "options": [{"text": "la méthodologie", "correct": false}, {"text": "la didactique", "correct": true}]}, {"type": "flashcard", "front": "Italiano (l’)", "back": "l’italien", "pronunciation": ""}, {"type": "flashcard", "front": "Storia (la)", "back": "l’histoire", "pronunciation": ""}, {"type": "flashcard", "front": "Matematica (la)", "back": "les", "pronunciation": ""}, {"type": "flashcard", "front": "Scienze (le)", "back": "les sciences", "pronunciation": ""}, {"type": "flashcard", "front": "Inglese (l’)", "back": "l’anglais", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Italiano (l’)' ?", "options": [{"text": "l’histoire", "correct": false}, {"text": "l’italien", "correct": true}]}, {"type": "flashcard", "front": "Geografia (la)", "back": "la géographie", "pronunciation": ""}, {"type": "flashcard", "front": "Filosofia (la)", "back": "la physique", "pronunciation": ""}, {"type": "flashcard", "front": "Studiare", "back": "étudier", "pronunciation": ""}, {"type": "flashcard", "front": "Insegnare", "back": "enseigner", "pronunciation": ""}, {"type": "flashcard", "front": "Apprendere", "back": "apprendre", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Geografia (la)' ?", "options": [{"text": "la physique", "correct": false}, {"text": "la géographie", "correct": true}]}, {"type": "flashcard", "front": "Imparare", "back": "apprendre", "pronunciation": ""}, {"type": "flashcard", "front": "Formare", "back": "former", "pronunciation": ""}, {"type": "flashcard", "front": "Istruire", "back": "instruire", "pronunciation": ""}, {"type": "flashcard", "front": "Educare", "back": "éduquer", "pronunciation": ""}, {"type": "flashcard", "front": "Allenare", "back": "entraîner", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Imparare' ?", "options": [{"text": "former", "correct": false}, {"text": "apprendre", "correct": true}]}, {"type": "flashcard", "front": "Preparare", "back": "préparer", "pronunciation": ""}, {"type": "flashcard", "front": "Esercitare", "back": "exercer", "pronunciation": ""}, {"type": "flashcard", "front": "Esplorare", "back": "explorer", "pronunciation": ""}, {"type": "flashcard", "front": "Incoraggiare", "back": "encourager", "pronunciation": ""}, {"type": "flashcard", "front": "Sostenere", "back": "soutenir", "pronunciation": ""}, {"type": "quiz", "question": "Que signifie 'Preparare' ?", "options": [{"text": "exercer", "correct": false}, {"text": "préparer", "correct": true}]}, {"type": "success", "title": "Module terminé !", "content": "Vous avez appris de nouveaux mots en La Scuola."}]
+      },
+    ]
+  },
+  structured: {
+    title: 'Cursus Académique',
+    subtitle: 'De débutant A1 à intermédiaire B2',
+    intro: 'Objectif: Grammaire & Bases solides',
+    items: [
+{"id": "irr_verbs_master", "title": "Master Verbes Irréguliers", "desc": "Liste complète des verbes irréguliers avec exemples", "chapters": 51, "progress": 0, icon: BookOpen, "locked": false, "slides": [{"type": "intro", "title": "Les Verbes Irréguliers", "content": "Les verbes les plus importants à connaître."}, {"type": "flashcard", "front": "Apparire", "back": "Apparaitre\nP.P: Apparso", "context": "Ex: Il sole è apparso improvvisamente. (Le soleil est apparu)", "pronunciation": ""}, {"type": "flashcard", "front": "Aprire", "back": "Ouvrir\nP.P: Aperto", "context": "Ex: Ho aperto la nestra. (J'ai ouvert la fenêtre.)", "pronunciation": ""}, {"type": "flashcard", "front": "Accendere", "back": "Allumer\nP.P: Acceso", "context": "Ex: Ha acceso il fuoco. (Il/Elle a allumé le feu.)", "pronunciation": ""}, {"type": "flashcard", "front": "Accorgere", "back": "Apercevoir\nP.P: Accorto", "context": "Ex: Mi sono accorto del tuo sorriso. (Je me suis aperçu de)", "pronunciation": ""}, {"type": "flashcard", "front": "Appendere", "back": "Accrocher\nP.P: Assunto", "context": "Ex: Abbiamo assunto un nuovo dipendente. (Nous avons)", "pronunciation": ""}, {"type": "flashcard", "front": "Bere", "back": "Boire\nP.P: Bevuto", "context": "Ex: Ho bevuto un bicchiere d'acqua. (J'ai bu un verre d'eau.)", "pronunciation": ""}, {"type": "flashcard", "front": "Cadere", "back": "Tomber\nP.P: Caduto", "context": "Ex: È caduto un albero durante la tempesta. (Un arbre est)", "pronunciation": ""}, {"type": "flashcard", "front": "Chiedere", "back": "Demander\nP.P: Chiesto", "context": "Ex: Ho chiesto informations alla stazione. (J'ai demandé des)", "pronunciation": ""}, {"type": "flashcard", "front": "Chiudere", "back": "Fermer\nP.P: Chiuso", "context": "Ex: Ho chiuso la porta a chiave. (J'ai fermé la porte à clé.)", "pronunciation": ""}, {"type": "flashcard", "front": "Cogliere", "back": "Cueillir\nP.P: Conosciuto", "context": "Ex: Ho conosciuto il tuo amico ieri sera. (J'ai rencontré ton)", "pronunciation": ""}, {"type": "flashcard", "front": "Correre", "back": "Courir\nP.P: Cresciuto", "context": "Ex: Sono cresciuto in una piccola città di provincia. (J'ai)", "pronunciation": ""}, {"type": "flashcard", "front": "Cuocere", "back": "Cuire\nP.P: Difeso", "context": "Ex: Ho difeso il mio amico durante la lite. (J'ai défendu mon)", "pronunciation": ""}, {"type": "flashcard", "front": "Dipingere", "back": "Peindre\nP.P: Dipinto", "context": "Ex: Ha dipinto un quadro meraviglioso. (Il/Elle a peint un)", "pronunciation": ""}, {"type": "flashcard", "front": "Dire", "back": "Dire\nP.P: Detto", "context": "Ex: Ho detto la verità. (J'ai dit la vérité.)", "pronunciation": ""}, {"type": "flashcard", "front": "Dirigere", "back": "Diriger\nP.P: Diretto", "context": "Ex: Ha diretto la compagnia per molti anni. (Il/Elle a dirigé la)", "pronunciation": ""}, {"type": "flashcard", "front": "Discutere", "back": "Discuter\nP.P: Diviso", "context": "Ex: Abbiamo diviso equamente la torta tra tutti gli invitati. ( Nous avons partagé équitablement le gâteau entre tous les invités.)", "pronunciation": ""}, {"type": "flashcard", "front": "Esistere", "back": "Exister\nP.P: Evaso", "context": "Ex: Il prigioniero è evaso dalla prigione. (Le prisonnier s'est)", "pronunciation": ""}, {"type": "flashcard", "front": "Fingere", "back": "Feindre\nP.P: Finto", "context": "Ex: Ha nto di essere malato per non andare a scuola. (Il/Elle)", "pronunciation": ""}, {"type": "flashcard", "front": "Friggere", "back": "Frire\nP.P: Giunto", "context": "Ex: Sono nalmente giunto alla meta del mio viaggio. (Je suis)", "pronunciation": ""}, {"type": "flashcard", "front": "Infrangere", "back": "Briser\nP.P: Infranto", "context": "Ex: Ha infranto le regole. (Il/Elle a enfreint la règle.)", "pronunciation": ""}, {"type": "flashcard", "front": "Invadere", "back": "Envahir\nP.P: Invaso", "context": "Ex: Le truppe nemiche hanno invaso il paese. (Les troupes)", "pronunciation": ""}, {"type": "flashcard", "front": "Leggere", "back": "Lire\nP.P: Letto", "context": "Ex: Ho letto un bel libro durante le vacanze. (J'ai lu un bon)", "pronunciation": ""}, {"type": "flashcard", "front": "Mettere", "back": "Mettre\nP.P: Messo", "context": "Ex: Ho messo le chiavi sul tavolo. (J'ai mis les clés sur la)", "pronunciation": ""}, {"type": "flashcard", "front": "Mordere", "back": "Mordre\nP.P: Morso", "context": "Ex: Il cane mi ha morso la mano. (Le chien m'a mordu la)", "pronunciation": ""}, {"type": "flashcard", "front": "Morire", "back": "Mourir\nP.P: Morto", "context": "Ex: Mio nonno è morto l'anno scorso. (Mon grand-père est)", "pronunciation": ""}, {"type": "flashcard", "front": "Muovere", "back": "Bouger\nP.P: Nato", "context": "Ex: Sono nato in una piccola città di provincia. (Je suis né)", "pronunciation": ""}, {"type": "flashcard", "front": "Nascondere", "back": "Cacher\nP.P: Nascosto", "context": "Ex: Ha nascosto il regalo sotto il letto. (Il/Elle a caché le)", "pronunciation": ""}, {"type": "flashcard", "front": "Offrire", "back": "O rir\nP.P: O erto", "context": "Ex: Abbiamo o erto un regalo di compleanno alla nostra ( amica. Nous avons o ert un cadeau d'anniversaire à notre amie.)", "pronunciation": ""}, {"type": "flashcard", "front": "Perdere", "back": "Perdre\nP.P: Perso", "context": "Ex: Ho perso le chiavi di casa. (J'ai perdu les clés de la)", "pronunciation": ""}, {"type": "flashcard", "front": "Persuadere", "back": "Persuader\nP.P: Piaciuto", "context": "Ex: Il lm non mi è piaciuto molto. (Je n'ai pas beaucoup)", "pronunciation": ""}, {"type": "flashcard", "front": "Piangere", "back": "Pleurer\nP.P: Posto", "context": "Ex: Ho posto la borsa sul tavolo. (J'ai posé le sac sur la table.)", "pronunciation": ""}, {"type": "flashcard", "front": "Prendere", "back": "Prendre\nP.P: Protetto", "context": "Ex: Abbiamo protetto la nostra casa con un sistema di (J'ai pris le train)", "pronunciation": ""}, {"type": "flashcard", "front": "Pungere", "back": "Piquer\nP.P: Punto", "context": "Ex: Mi ha punto una zanzara durante la notte. (Je me suis fait)", "pronunciation": ""}, {"type": "flashcard", "front": "Radere", "back": "Raser\nP.P: Retto", "context": "Ex: La mensola ha retto il peso dei libri senza piegarsi. ( L'étagère a supporté le poids des livres sans plier.)", "pronunciation": ""}, {"type": "flashcard", "front": "Rendere", "back": "Rendre\nP.P: Reso", "context": "Ex: L'ha reso felice con il suo gesto gentile. (Il/Elle l'a rendu)", "pronunciation": ""}, {"type": "flashcard", "front": "Ridere", "back": "Rire\nP.P: Rotto", "context": "Ex: Ho rotto un bicchiere. (J'ai cassé un verre.)", "pronunciation": ""}, {"type": "flashcard", "front": "Rimanere", "back": "Rester\nP.P: Rimasto", "context": "Ex: Sono rimasto a casa per tutto il giorno. (Je suis resté à la)", "pronunciation": ""}, {"type": "flashcard", "front": "Scegliere", "back": "Choisir\nP.P: Scelto", "context": "Ex: Ha scelto il vestito più bello per la festa. (Elle a choisi la)", "pronunciation": ""}, {"type": "flashcard", "front": "Scendere", "back": "Descendre\nP.P: Sceso", "context": "Ex: Sono sceso dall'autobus alla fermata successiva. (Je suis)", "pronunciation": ""}, {"type": "flashcard", "front": "Sciogliere", "back": "Fondre\nP.P: Scritto", "context": "Ex: Ho scritto una lettera al mio amico. (J'ai écrit une lettre à)", "pronunciation": ""}, {"type": "flashcard", "front": "Sorgere", "back": "Surgir\nP.P: Speso", "context": "Ex: Ho speso tutti i miei risparmi in vacanza. (J'ai dépensé)", "pronunciation": ""}, {"type": "flashcard", "front": "Spingere", "back": "Pousser\nP.P: Spinto", "context": "Ex: Ho spinto la porta pour aprirla. (J'ai poussé la porte pour)", "pronunciation": ""}, {"type": "flashcard", "front": "Stringere", "back": "Serrer\nP.P: Stretto", "context": "Ex: Ho stretto la mano del mio amico quando l'ho salutato. ( J'ai serré la main de mon ami quand je l'ai salué.)", "pronunciation": ""}, {"type": "flashcard", "front": "Succedere", "back": "Arriver\nP.P: Successo", "context": "Ex: Non so cosa è successo ieri sera alla festa. (Je ne sais)", "pronunciation": ""}, {"type": "flashcard", "front": "Tacere", "back": "Se taire\nP.P: Taciuto", "context": "Ex: Ha taciuto per tutta la riunione. (Il/Elle est resté silencieux)", "pronunciation": ""}, {"type": "flashcard", "front": "Togliere", "back": "Enlever\nP.P: Tolto", "context": "Ex: Ha tolto le scarpe prima di entrare in casa. (Il/Elle a)", "pronunciation": ""}, {"type": "flashcard", "front": "Trarre", "back": "Tirer\nP.P: Tratto", "context": "Ex: Ho tratto una conclusione da quella discussione. (J'ai tiré)", "pronunciation": ""}, {"type": "flashcard", "front": "Valere", "back": "Valoir\nP.P: Valso", "context": "Ex: È valsa la pena di. (.. Cela vaut la peine de...)", "pronunciation": ""}, {"type": "flashcard", "front": "Vedere", "back": "Voir\nP.P: Visto", "context": "Ex: Ho visto un lm intéressant ieri sera. (J'ai vu un lm)", "pronunciation": ""}, {"type": "flashcard", "front": "Vincere", "back": "Vaincre\nP.P: Vinto", "context": "Ex: La squadra ha vinto la partita con un gol di Giroud. ( L'équipe a remporté le match avec un but de Giroud.)", "pronunciation": ""}, {"type": "flashcard", "front": "Vivere", "back": "Vivre\nP.P: Vissuto", "context": "Ex: Ha vissuto per molti anni in un paese straniero. (Il/Elle a)", "pronunciation": ""}, {"type": "success", "title": "Terminé", "content": "Vous avez survécu aux verbes irréguliers !"}]},
+
+      { 
+        id: 'mod1', 
+        title: 'Niveau 1: Les Fondations', 
+        desc: 'Prononciation, Alphabet et être/avoir', 
+        chapters: 5, 
+        progress: 0,
+        icon: BookOpen,
+        locked: false,
+        slides: [
+           { type: 'intro', title: 'Les Verbes Auxiliaires', content: 'Le verbe Essere (Être)' },
+           { type: 'grammar', title: 'Essere (Être)', content: 'Io sono (Je suis)\nTu sei (Tu es)\nLui/Lei è (Il/Elle est)\nNoi siamo (Nous sommes)\nVoi siete (Vous êtes)\nLoro sono (Ils sont)' },
+           { type: 'quiz', question: 'Traduisez: Je suis français', options: [{text: 'Io sono francese', correct: true}, {text: 'Tu sei francese', correct: false}] }
+        ]
+      },
+      { 
+        id: 'mod2', 
+        title: 'Niveau 2: Les Articles', 
+        desc: 'Le, La, Les - Il, Lo, La, I, Gli, Le', 
+        chapters: 8, 
+        progress: 0,
+        icon: PenTool,
+        locked: false,
+        slides: [
+          { type: 'intro', title: 'Les Articles Définis', content: 'C\'est un peu plus complexe qu\'en français, mais courage !' },
+          { type: 'grammar', title: 'Masculin Singulier', content: 'IL (devant consonne): Il libro\nLO (devant s+consonne, z): Lo studente\nL\' (devant voyelle): L\'amico' },
+          { type: 'quiz', question: 'Quel article pour "Ragazzo" (Garçon) ?', options: [{text: 'Lo ragazzo', correct: false}, {text: 'Il ragazzo', correct: true}] }
+        ]
+      },
+      { 
+        id: 'mod3', 
+        title: 'Niveau 3: Conversation', 
+        desc: 'Phrases complexes et mise en situation', 
+        chapters: 10, 
+        progress: 0,
+        icon: MessageCircle,
+        locked: false,
+        slides: [
+          {
+            type: 'intro',
+            title: 'Phrases Courantes Essentielles',
+            content: '100 phrases essentielles à connaître pour communiquer en italien.'
+          },
+          {
+            type: 'flashcard',
+            front: 'Mi chiamo [nome].',
+            back: 'Je m\'appelle [nom].',
+            pronunciation: '/mi kia-mo/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Qual è il tuo nome?',
+            back: 'Quel est ton nom?',
+            pronunciation: '/kwal é il tu-o no-mé/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Piacere!',
+            back: 'Enchanté!',
+            pronunciation: '/pia-ché-ré/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Come stai?',
+            back: 'Comment ça va?',
+            pronunciation: '/ko-mé sta-i/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sto bene, grazie.',
+            back: 'Ça va bien, merci.',
+            pronunciation: '/sto bé-né gra-tsié/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Non sto bene.',
+            back: 'Ça ne va pas bien.',
+            pronunciation: '/non sto bé-né/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Grazie mille!',
+            back: 'Merci beaucoup!',
+            pronunciation: '/gra-tsié mil-lé/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Grazie per il tuo aiuto.',
+            back: 'Merci pour ton aide.',
+            pronunciation: '/gra-tsié pér il tu-o a-i-u-to/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Prego.',
+            back: 'De rien.',
+            pronunciation: '/pré-go/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Per favore.',
+            back: 'S\'il vous plaît.',
+            pronunciation: '/pér fa-vo-ré/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment dire "Je m\'appelle" en italien ?',
+            options: [
+              { text: 'Mi chiamo', correct: true },
+              { text: 'Tu sei', correct: false },
+              { text: 'Come stai', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Scusa / Scusi',
+            back: 'Pardon / Excusez-moi',
+            pronunciation: '/scu-za / scu-zi/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Mi dispiace.',
+            back: 'Je suis désolé.',
+            pronunciation: '/mi dis-pia-ché/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Non capisco.',
+            back: 'Je ne comprends pas.',
+            pronunciation: '/non ka-pis-ko/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Puoi ripetere?',
+            back: 'Peux-tu répéter?',
+            pronunciation: '/pu-oi ri-pé-té-ré/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Parli inglese?',
+            back: 'Parlez-vous anglais?',
+            pronunciation: '/par-li in-glé-zé/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Parlo italiano.',
+            back: 'Je parle italien.',
+            pronunciation: '/par-lo i-ta-lia-no/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment demander "Ça va?" en italien ?',
+            options: [
+              { text: 'Come stai?', correct: true },
+              { text: 'Quanto costa?', correct: false },
+              { text: 'Dove vai?', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Dove sono?',
+            back: 'Où suis-je?',
+            pronunciation: '/do-vé so-no/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Dove è la stazione?',
+            back: 'Où est la gare?',
+            pronunciation: '/do-vé é la sta-zio-né/'
+          },
+          {
+            type: 'flashcard',
+            front: 'A destra',
+            back: 'À droite',
+            pronunciation: '/a dés-tra/'
+          },
+          {
+            type: 'flashcard',
+            front: 'A sinistra',
+            back: 'À gauche',
+            pronunciation: '/a si-nis-tra/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Dritto',
+            back: 'Tout droit',
+            pronunciation: '/drit-to/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Quanto costa?',
+            back: 'Combien ça coûte?',
+            pronunciation: '/kwan-to kos-ta/'
+          },
+          {
+            type: 'flashcard',
+            front: 'È troppo caro.',
+            back: 'C\'est trop cher.',
+            pronunciation: '/é trop-po ka-ro/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment demander un prix?',
+            options: [
+              { text: 'Quanto costa?', correct: true },
+              { text: 'Come stai?', correct: false },
+              { text: 'Dove vai?', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Ho fame.',
+            back: 'J\'ai faim.',
+            pronunciation: '/o fa-mé/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Ho sete.',
+            back: 'J\'ai soif.',
+            pronunciation: '/o sé-té/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Vorrei un caffè.',
+            back: 'Je voudrais un café.',
+            pronunciation: '/vor-rè un kaf-fè/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Che ore sono?',
+            back: 'Quelle heure est-il?',
+            pronunciation: '/ké o-ré so-no/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sono le tre.',
+            back: 'Il est trois heures.',
+            pronunciation: '/so-no lé tré/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Qual è la data?',
+            back: 'Quelle est la date?',
+            pronunciation: '/kwal é la da-ta/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Che giorno è?',
+            back: 'Quel jour sommes-nous?',
+            pronunciation: '/ké jor-no é/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Oggi',
+            back: 'Aujourd\'hui',
+            pronunciation: '/od-ji/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Domani',
+            back: 'Demain',
+            pronunciation: '/do-ma-ni/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Ieri',
+            back: 'Hier',
+            pronunciation: '/ié-ri/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment dire "Aujourd\'hui"?',
+            options: [
+              { text: 'Oggi', correct: true },
+              { text: 'Domani', correct: false },
+              { text: 'Ieri', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Buongiorno',
+            back: 'Bonjour',
+            pronunciation: '/bwon-jor-no/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Buonasera',
+            back: 'Bonsoir',
+            pronunciation: '/bwon-a-sé-ra/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Buonanotte',
+            back: 'Bonne nuit',
+            pronunciation: '/bwon-a-not-té/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Arrivederci',
+            back: 'Au revoir',
+            pronunciation: '/ar-ri-vé-dér-chi/'
+          },
+          {
+            type: 'flashcard',
+            front: 'A presto',
+            back: 'À bientôt',
+            pronunciation: '/a pres-to/'
+          },
+          {
+            type: 'flashcard',
+            front: 'A domani',
+            back: 'À demain',
+            pronunciation: '/a do-ma-ni/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Ciao',
+            back: 'Salut / Au revoir',
+            pronunciation: '/tcha-o/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sono felice.',
+            back: 'Je suis heureux.',
+            pronunciation: '/so-no fé-li-ché/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sono triste.',
+            back: 'Je suis triste.',
+            pronunciation: '/so-no tris-té/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sono arrabbiato.',
+            back: 'Je suis fâché.',
+            pronunciation: '/so-no ar-rab-bia-to/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sono stanco.',
+            back: 'Je suis fatigué.',
+            pronunciation: '/so-no stan-ko/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Sono malato.',
+            back: 'Je suis malade.',
+            pronunciation: '/so-no ma-la-to/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment dire "Je suis heureux"?',
+            options: [
+              { text: 'Sono felice', correct: true },
+              { text: 'Sono triste', correct: false },
+              { text: 'Sono stanco', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Amo la musica.',
+            back: 'J\'aime la musique.',
+            pronunciation: '/a-mo la mu-zi-ka/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Non mi piace.',
+            back: 'Je n\'aime pas.',
+            pronunciation: '/non mi pia-ché/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Mi piace questo.',
+            back: 'J\'aime cela.',
+            pronunciation: '/mi pia-ché kwés-to/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Che bello!',
+            back: 'Que c\'est beau!',
+            pronunciation: '/ké bél-lo/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Che peccato!',
+            back: 'Quel dommage!',
+            pronunciation: '/ké pek-ka-to/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Vai a scuola?',
+            back: 'Vas-tu à l\'école?',
+            pronunciation: '/va-i a sku-o-la/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Lavoro come insegnante.',
+            back: 'Je travaille comme professeur.',
+            pronunciation: '/la-vo-ro ko-mé in-sé-nyan-té/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Dove abiti?',
+            back: 'Où habites-tu?',
+            pronunciation: '/do-vé a-bi-ti/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Abito a Roma.',
+            back: 'J\'habite à Rome.',
+            pronunciation: '/a-bi-to a ro-ma/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Hai fratelli?',
+            back: 'As-tu des frères?',
+            pronunciation: '/a-i fra-tél-li/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Ho due sorelle.',
+            back: 'J\'ai deux sœurs.',
+            pronunciation: '/o du-é so-rél-lé/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment dire "Je travaille comme professeur"?',
+            options: [
+              { text: 'Lavoro come insegnante', correct: true },
+              { text: 'Amo la musica', correct: false },
+              { text: 'Vai a scuola', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Mi piace leggere.',
+            back: 'J\'aime lire.',
+            pronunciation: '/mi pia-ché leg-gé-ré/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Guardo la televisione.',
+            back: 'Je regarde la télévision.',
+            pronunciation: '/guar-do la té-lé-vi-zio-né/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Ascolto musica.',
+            back: 'J\'écoute de la musique.',
+            pronunciation: '/a-skol-to mu-zi-ka/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Gioco a calcio.',
+            back: 'Je joue au football.',
+            pronunciation: '/jo-ko a kal-tchio/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Vado in palestra.',
+            back: 'Je vais à la gym.',
+            pronunciation: '/va-do in pa-les-tra/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Quando venite?',
+            back: 'Quand venez-vous?',
+            pronunciation: '/kwan-do vé-ni-té/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Vengo domani.',
+            back: 'Je viens demain.',
+            pronunciation: '/vén-go do-ma-ni/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Posso aiutarti?',
+            back: 'Puis-je t\'aider?',
+            pronunciation: '/pos-so a-i-u-tar-ti/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Certo! / Sì',
+            back: 'Bien sûr! / Oui',
+            pronunciation: '/chér-to / sì/'
+          },
+          {
+            type: 'flashcard',
+            front: 'No, grazie.',
+            back: 'Non, merci.',
+            pronunciation: '/no gra-tsié/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Forse.',
+            back: 'Peut-être.',
+            pronunciation: '/for-sé/'
+          },
+          {
+            type: 'quiz',
+            question: 'Comment dire "Bien sûr"?',
+            options: [
+              { text: 'Certo', correct: true },
+              { text: 'Forse', correct: false },
+              { text: 'No', correct: false }
+            ]
+          },
+          {
+            type: 'flashcard',
+            front: 'Non lo so.',
+            back: 'Je ne sais pas.',
+            pronunciation: '/non lo so/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Capisco.',
+            back: 'Je comprends.',
+            pronunciation: '/ka-pis-ko/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Che cosa?',
+            back: 'Quoi?',
+            pronunciation: '/ké ko-za/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Quale?',
+            back: 'Lequel?',
+            pronunciation: '/kua-lé/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Chi?',
+            back: 'Qui?',
+            pronunciation: '/ki/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Quando?',
+            back: 'Quand?',
+            pronunciation: '/kwan-do/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Perché?',
+            back: 'Pourquoi?',
+            pronunciation: '/pér-ké/'
+          },
+          {
+            type: 'flashcard',
+            front: 'Come?',
+            back: 'Comment?',
+            pronunciation: '/ko-mé/'
+          },
+          {
+            type: 'success',
+            title: 'Phrases Courantes Maîtrisées!',
+            content: 'Vous pouvez maintenant converser en italien avec les phrases essentielles!'
+          }
+        ]
+      },
+    ]
+  }
+};
