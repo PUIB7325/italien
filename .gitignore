@@ -7,21 +7,61 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+package-lock.json (usually, but included for reproducibility in this project)
+
+# Build outputs
 dist
 dist-ssr
 *.local
+.parcel-cache
+.cache
 
-# Editor directories and files
+# IDE/Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+*~
 
-# Local Netlify folder
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Deployment
 .netlify
+.vercel
+dist/
+
+# Input reference materials
+input/*.pdf
+input/*.crdownload
+input/*.mhtml
+
+# OS files
+Thumbs.db
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Backup files
+*.backup
+*.backup2
+*.bak
+*.tmp
